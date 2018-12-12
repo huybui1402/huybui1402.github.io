@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+    margin:0
+}
+.head{
+    width: 100%;
+
+}
+.head h3{
+    text-align: center;
+}
+.body{
+    width: 80%;
+    padding-left: 80px;
+}
+.One{
+    width: 100%;
+    padding-left: 40%
+}
+.Two{
+    width: 100%;
+    padding-left:48%;
+}
+.Three{
+    width: 100%;
+    padding-left:58%;
+
+}
