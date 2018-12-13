@@ -1,0 +1,70 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.tittle{
+    
+    width: 800px;
+    height: 80px;
+    margin: auto;
+    line-height: 80px;
+    color: aqua;
+    background-color: burlywood;
+    text-align: center;
+}
+.container{
+    max-width: 100%;
+}
+.One img{
+    box-shadow: 5px 10px 10px 5px ;
+    max-width:400px;
+    height: 300px;
+    
+}
+.Number{
+    padding-left: 170px;
+
+}
+.content{
+    width: 100%;
+    padding: 0;
+    margin: 1.5em auto;
+
+}
+.Number .One{ 
+  overflow: hidden;
+    float: left;
+    width: 30%;
+
+}
+.Two img{
+    box-shadow: 5px 10px 10px 5px ;
+    max-width:400px;
+    height: 300px;
+
+}
+.content .Two{ 
+   overflow: hidden;
+   float: left;
+   width: 30%;
+
+}
+.Number1{
+    padding-left: 170px;
+}
+
+.Three img{
+    box-shadow: 5px 10px 10px 5px ;
+    max-width:400px;
+    height: 300px;
+
+}
+.content .Three{ 
+   overflow: hidden;
+   float: left;
+   width: 30%;
+
+}
+.Number2{
+    padding-left: 170px;
+}
