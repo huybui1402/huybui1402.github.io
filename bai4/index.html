@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+   <script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+   </script>
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Purchase</a> 
+
+                    <ul class="sub-menu">
+                        <li><a href="#">IronMan</a></li>
+                        <li><a href="#">SuperMan</a></li>
+                        <li><a href="#">SpiderMan</a></li>
+                        <li><a href="#">Thor</a></li>
+
+                    </ul>
+
+                </li>
+                <li><a href="#">Exchangs</a></li>
+                <li><a href="#">Infomation</a></li>
+                <li><a href="#">Seting</a></li>
+                <li><a href="#">Login</a></li>
+
+            </ul>
+        </div>
+        <div class="content">
+
+            <div class="title">
+                <h1>Bình yên nơi trốn ngàn người mơ ước</h1>
+                <div class="every-life">
+                    <p style="color:blue">Ước mơ ai mà chẳng có<p>
+                            <p style="color:brown">Mơ rằng cuộc sống trốn bồng lai,</p>
+                            <p style="color:yellow">Âu tư sầu nắng bỏ quên đời</p>
+                            <p style="color:cornsilk">Một mình vui vẻ sống bình yên.</p>
+                </div>
+            </div>
+            <div class="image-website">
+                <div class="image">
+                    <h3>Nhân vật ironman</h3>
+                    <img src="./mo-hinh-iron-man-1-518x520.jpg" />
+                </div>
+                <div class="image">
+                    <h3>Nhân vật ironman</h3>
+                    <img src="./mo-hinh-iron-man-1-518x520.jpg" />
+                </div>
+                <div class="image image4">
+                    <h3>Nhân vật ironman</h3>
+                    <img src="./mo-hinh-iron-man-1-518x520.jpg" />
+                </div>
+
+            </div>
+            <div class="document">
+                <div class="small-document">
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                </div>
+                <div class="small-document">
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                </div>
+                <div class="small-document">
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                </div>
+             
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+            </div>
+
+            <footer>
+                <div>Copyright &copy;http://Huybuiblog.com </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
