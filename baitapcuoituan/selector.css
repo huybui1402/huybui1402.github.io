@@ -1,0 +1,200 @@
+.container{
+
+    max-width: 960px;
+    max-height: 1000px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+
+}
+.item{
+    background-color: gray;
+    margin: 5px;
+    height: 60px;
+    width: 100%;
+}
+
+.content{ 
+    max-width: 960px;
+    max-height: 1000px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+}
+.item1{
+    margin: 5px;
+    background-color: gray;
+    height: 200px;
+    width: 200px;
+
+}
+.item2{
+    background-color: gray;
+    margin: 5px;
+    height: 96px;
+    width: 260px;
+}
+.item3{
+    background-color: gray;
+    margin: 5px;
+    height: 96px;
+    width: 260px;
+}
+.item4{
+    margin: 5px;
+    background-color: gray;
+    height: 197px;
+    width: 200px;
+
+}
+.bottom{
+    width: 600px;
+    height: 60px;
+    margin: auto;
+    background-color: gray;
+}
+.bottom1{
+    max-width: 960px;
+    max-height: 1000px;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+
+}
+.One{
+    background-color: gray;
+    margin: 5px;
+    height: 150px;
+    width: 50px;
+}
+.One1{
+    flex-grow: 1;
+}
+.One2{
+    flex-grow: 2;
+}
+.One3{
+    flex-grow: 3;
+}
+.bottom2{
+    max-width: 960px;
+    max-height: 1000px;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+}
+.Two{
+    background-color: gray;
+    margin: 5px;
+    height: 300px;
+    width: 300px;
+}
+.Three{
+    background-color: gray;
+    margin: 5px;
+    height: 350px;
+    width: 300px;
+}
+.Three1{
+    background-color: gray;
+    margin: 5px;
+    height: 430px;
+    width: 300px;
+}
+.Four{
+    background-color: gray;
+    margin: 5px;
+    height: 250px;
+    width: 330px;
+}
+.Four1{
+    background-color: gray;
+    margin: 5px;
+    height: 300px;
+    width: 330px;
+}
+.Four2{
+    background-color: gray;
+    margin: 5px;
+    height: 400px;
+    width: 330px;
+}
+.color{
+    max-width: 960px;
+    max-height: 1000px;
+    margin: auto;
+ 
+    
+}
+.colors{
+    background-color: gray;
+    max-width: 960px;
+    max-height: 1000px;
+    float: left;
+}
+.colors1{
+    background-color:red;
+    height: 159px;
+    width: 159px;
+}
+.colors2{
+    background-color:blue;
+    height: 159px;
+    width: 159px;
+}
+.colors3{
+    background-color:yellow;
+    height: 159px;
+    width: 159px;
+}
+.colors4{
+    background-color:green;
+    height: 159px;
+    width: 159px;
+}
+.colors5{
+    background-color:cyan;
+    height: 159px;
+    width: 159px;
+}
+.colors6{
+    background-color:gray;
+    height: 159px;
+    width: 159px;
+}
+.fotter{
+    overflow: hidden;
+    width:65%;
+    max-height: 1000px;
+    clear: both;
+    margin: auto;
+}
+.water1{
+    background-color:gray;
+    height: 160px;
+    width: 160px;
+}
+.water2{
+    background-color:white;
+    height: 160px;
+    width: 160px;
+}
+.water3{
+    background-color:firebrick;
+    height: 160px;
+    width: 160px;
+}
+.water4{
+    background-color:white;
+    height: 160px;
+    width: 160px;
+}
+.water5{
+    background-color:purple;
+    height: 160px;
+    width: 160px;
+}
+.water{
+    float: left;
+    
+}
