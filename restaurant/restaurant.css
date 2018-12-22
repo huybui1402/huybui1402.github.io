@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-image: url('./nhahang.jpg');
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.menu{
+  
+    position: fixed;
+      display: flex;
+      width: 100%;
+   
+}
+.item{
+  
+    background-color: #607d8b;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    color: white;
+    border:1px solid gray;
+    text-align: center;
+    
+}
+.item h3{
+    font-size:30px;
+    font-family: 'Aleo', serif;
+    font-family: 'Pacifico', cursive;
+}
+.menu1 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Aleo', serif;
+    font-family: 'Pacifico', cursive;
+}
+.item :hover{
+    color: aqua;
+}
+a{  
+
+    text-decoration: none;
+}
+.submenu-1 li{
+    border: 1px solid gray;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  background-color: #607d8b;
+
+}
+.item .submenu-1{
+    display: none;
+}
+.item1:hover .submenu-1{
+    display: block;
+}
+.submenu-1 li:hover{
+background-color: chocolate;
+
+}
+.submenu-2 li{
+    border: 1px solid gray;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  background-color: #607d8b;
+
+}
+.item .submenu-2{
+    display: none;
+}
+.item2:hover .submenu-2{
+    display: block;
+}
+.submenu-2 li:hover{
+background-color: chocolate;
+
+}
+.submenu-3 li{
+    border: 1px solid gray;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  background-color: #607d8b;
+
+}
+.item .submenu-3{
+    display: none;
+}
+.item3:hover .submenu-3{
+    display: block;
+}
+.submenu-3 li:hover{
+background-color: chocolate;
+}
+.submenu-4 li{
+    border: 1px solid gray;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  background-color: #607d8b;
+
+}
+
+.item .submenu-4{
+    display: none;
+}
+.item4:hover .submenu-4{
+    display: block;
+}
+.submenu-4 li:hover{
+background-color: chocolate;
+}
+.advertise{
+    margin-top: 170px;
+    height: 300px;
+    width:40%;
+    margin-left: 10%;
+    background-color: #8080809e;
+    overflow: hidden;
+}
+.advertise h1{
+    color: white;
+    text-align: center;
+}
