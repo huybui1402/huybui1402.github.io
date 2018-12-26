@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     bai1
+function binhPhuong(a){
+    return a * a;
+}
+// bai2
+function binh_phuong(a, b , c){
+    var l = 3*a + 2*b - c;
+    return binhPhuong(l)
+}
+// bai3
+truncate_string = function (str1, length) {
+  
+  if ((str1.constructor === String) && (length>0)) {
+      return str1.slice(0, 10) + "...";
+  }
+};
+
+//bai3
+string = function(str4){
+	return str4.charAt(0).toUpperCase() + str4.slice(1);
+}
+document.write(string('welcome back việt nam'))
+//bai 7
+let teacher = {
+  ten: "hoa",
+  ho: "bui",
+  tuoi: 30,
+  say: function(){
+	
+	}
+}
+// bai5
+var paint = [80, 100, 3, 9, 25, 44];
+function myFunction() {
+  paint.sort(function(a, b){return a-b});
+  return paint[0]
+}
+//bai6
+// var fruits = ["huy", "tung", "duc", "khoa"];
+// function Function() {
+//   fruits.sort();
+//   return fruits
+// }
+
+//     </script>
+</body>
+</html>
