@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //bai1
+        function soSanh(a, b) {
+            if (a > b) {
+                document.write("Số a lớn b")
+            }
+            else if (a = b) {
+                document.write("Số a bằng b")
+            }
+            else {
+                document.write("Số a < b")
+            }
+
+        }
+        // bai2
+        let giaiThua = (n) => {
+            var giaiThua = 1;
+            for (i = 1; i <= n; i++) {
+                giaiThua *= i
+
+            }
+            return giaiThua
+        }
+        console.log(giaiThua([8]))
+        //bai3 
+        function soChan(arr) {
+         let chuoi = []
+            for (i = 0; i < arr.length; i++) {
+                if(arr[i]%2==0){
+                    chuoi.push(arr[i]);
+                    chuoi.sort(function(a, b){return b-a});
+                }
+               
+            }
+            return chuoi
+        }
+        //bai4
+function user(a){
+    let myFunction = []
+    for(i=1; i<=a.length ; i++){
+     myFunction.push(a[i])
+    }
+  if (a.length > 6 ){
+      alert("Đăng nhập thành công");
+  }
+
+  else{
+      alert ("Mật khẩu quá ngắn");
+  }
+ 
+}
+    </script>
+</body>
+
+</html>
