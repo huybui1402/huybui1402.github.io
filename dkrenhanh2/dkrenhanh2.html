@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //bai1
+    var d = new Date();//lấy ngày
+document.write("hôm nay ngày" + d.getDate()+" </br>");
+var e = new Date();//lấy tháng
+document.write(e.getMonth() + 1+ "</br>");
+var g = new Date();//năm
+g.setFullYear(2018);
+document.write(g + "</br>") ;
+
+
+//bai2
+let truncate_string = function (str1, length) {
+  
+  if ((str1.constructor === String) && (length>0)) {
+      return str1.slice(0, 10) + "...";
+  }
+};
+document.write(truncate_string('hello everyone my name is huy', 10) + "</br>")
+//bai4
+
+
+function translate(ngonngu){
+    switch (ngonngu) {
+  case "trungquoc":
+    document.write("nhi hao")
+    break;
+    case "vietnam":
+    document.write("xinchao")
+    break;
+    }
+}
+//bai3
+function translate(diemso){
+    switch (diemso) {
+  case "Dung":
+    document.write("Dung đạt điểm : F")
+    break;
+    case "Tuấn":
+    document.write("Tuấn đạt điểm : D")
+    break;
+    
+    case "Huy":
+    document.write("Huy đạt điểm : C")
+    break;
+    case "Nam":
+    document.write("Nam đạt điểm : B")
+    break;
+    case "An":
+    document.write("An đạt điểm : A")
+    break;
+    }
+}
+//bai5
+var room = 'false, false, false, true, false, true, false, true';
+var h = room.indexOf(true); 
+document.write(h)
+    </script>
+</body>
+</html>
