@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #09f403b0;
+        width: 100%;
+    }
+.number{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #dbdc39;
+    outline: none;
+}
+.number:hover{
+    background-color: darkgray;
+}
+.calculator{
+  top: 200px;
+text-align: center;
+  position: relative;
+    width: 100%;
+    height: 300px;
+}
+#ketqua{
+    margin-left: 10px;
+    width: 240px;
+    height: 30px;
+    outline: none;
+}
+.title{
+    color: #3f51b5;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    font-size: 32px;
+   animation: title 4s both;
+   position: absolute;
+}
+@keyframes title {
+    0%  { left:0;}
+    100%  { left:33%;}
+}
+#delete{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #dbdc39;
+    outline: none;
+}
+#clear-all{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #dbdc39;
+    outline: none;
+}
+.box-button{
+    padding-top: 10px;
+}
+#clear-all:hover{
+    background-color: darkgray;
+}
+</style>
+
+<body>
+    <div class="title">
+        <h1>Calculator Of Me</h1>
+    </div>
+    <div class="calculator">
+        <input type="text" id="ketqua" value="" />
+
+        <div class="box-button">
+            <div class="One"></div>
+            <button onclick="ClickButton(this)" class="number" value="7">7</button>
+            <button class="number" onclick="ClickButton(this)" value="8">8</button>
+            <button class="number" onclick="ClickButton(this)" value="9">9</button>
+            <button id="delete" onclick="del()" value="DEL">DEL</button>
+            <button id="clear-all" onclick="deleteall()">AC</button>
+            <div class="One"></div>
+            <button class="number" onclick="ClickButton(this)" value="4">4</button>
+            <button class="number" onclick="ClickButton(this)" value="5">5</button>
+            <button class="number" onclick="ClickButton(this)" value="6">6</button>
+            <button class="number" onclick="ClickButton(this)" value="+">+</button>
+            <button class="number" onclick="ClickButton(this)" value="-">-</button>
+            <div class="Three"></div>
+            <button class="number" onclick="ClickButton(this)" value="1">1</button>
+            <button class="number" onclick="ClickButton(this)" value="2">2</button>
+            <button class="number" onclick="ClickButton(this)" value="3">3</button>
+            <button class="number" onclick="ClickButton(this) " value="*">*</button>
+            <button class="number" onclick="ClickButton(this)" value="/">/</button>
+
+            <div></div>
+            <button class="number" onclick="ClickButton(this)" value=".">.</button>
+            <button class="number" onclick="ClickButton(this)" value="0">0</button>
+            <button class="number" onclick="binhphuong()" value="^2">^2</button>
+            <button class="number" onclick="giaithua()" value="!">!</button>
+            <button class="number" onclick="ketqua()">=</button>
+        </div>
+    </div>
+    <script>
+
+
+        function ClickButton(obj) {
+            document.getElementById('ketqua').value += obj.value
+        }
+
+        function ketqua() {
+
+            document.getElementById('ketqua').value = eval(document.getElementById('ketqua').value)
+        }
+
+        function deleteall() {
+            document.getElementById('ketqua').value = " "
+        }
+
+        function giaithua() {
+            var n = document.getElementById('ketqua').value
+            var giaithua = 1;
+            for (i = 1; i <= n; i++) {
+                giaithua *= i
+            }
+            document.getElementById('ketqua').value = giaithua
+        }
+        function binhphuong() {
+            var f = document.getElementById('ketqua').value
+            var binhphuong = []
+            for (i = 0; i <= f; i++) {
+                binhphuong = [i] * [i]
+            }
+            document.getElementById('ketqua').value = binhphuong
+        }
+        function del() {
+            var del = document.getElementById("ketqua").value
+            document.getElementById("ketqua").value = del.slice(0,del.length-1)
+            // console.log(del.length)
+        }
+    </script>
+</body>
+
+</html>
