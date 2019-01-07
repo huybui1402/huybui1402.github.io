@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+
+    }
+    body{
+        background-image:url('./nammoi.jpeg')
+    }
+    .question {
+        width: 500px;
+        height: 50px;
+        line-height: 50px;
+        background-color:#b5d43ac7;
+        outline: none;
+    }
+
+    .cauhoi1 {
+        width: 100%;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .cauhoi2 {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .reason {
+        width: 500px;
+        height: 50px;
+        line-height: 50px;
+        background-color: #b5d43ac7;
+        outline: none;
+    }
+
+    .position {
+        width: 500px;
+        height: 50px;
+        line-height: 50px;
+        background-color: #b5d43ac7;
+        outline: none;
+    }
+
+    .cauhoi3 {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px
+    }
+
+    .menu {
+        width: 500px;
+        height: 50px;
+        line-height: 50px;
+        background-color: #b5d43ac7;
+        outline: none;
+    }
+
+    .cauhoi4 {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px
+    }
+    .menu1{
+        width: 500px;
+        height: 50px;
+        line-height: 50px;
+        background-color: #b5d43ac7;
+        outline: none;
+    }
+    .cauhoi5{
+        width: 100%;
+        text-align: center;
+        margin-top: 50px
+    }
+</style>
+
+<body>
+    <div class="cauhoi1">
+        <button id="Quiz" class="question" value="Đâu là loại mũ ?">Đâu là loại mũ ?</button>
+        <button id="One" class="question" onclick="ClickButton()" value="A: Lưỡi hái"><b>A</b>: Lưỡi hái</button>
+        <button id="One2" class="question" onclick="Click()" value="B: Lưỡi Trai"><b>B</b>: Lưỡi Trai</button>
+        <button id="One3" class="question" onclick="ClickButton()" value="C: Lưỡi Lê"><b>C</b>: Lưỡi Lê</button>
+    </div>
+    <div class="cauhoi2">
+        <button id="Two" class="reason" value="Người ta thường nấu canh cua với thứ gì?">Người ta
+            thường nấu canh cua với thứ gì?</button>
+        <button id="Two1" class="reason" onclick="ClickQuiz2()" value="A: Củ cải"><b>A</b>: Củ cải</button>
+        <button id="Two2" class="reason" onclick="ClickQuiz1()" value="B: Rau đay"><b>B</b>: Rau đay</button>
+        <button id="Two3" class="reason" onclick="ClickQuiz2()" value="C: Mồng tơi "><b>C</b>: Mồng tơi</button>
+    </div>
+    <div class="cauhoi3">
+        <button id="Three" class="position" value="Tên ngọc thác Đambri hùng vĩ của núi rừng Tây Nguyên có ý nghĩa là gì ?">Tên
+            ngọc thác Đambri hùng vĩ của núi rừng Tây Nguyên có ý nghĩa là gì ?</button>
+        <button id="Three1" class="position" onclick="ClickPositon1()" value="A: Đợi chờ"><b>A</b>: Đợi chờ</button>
+        <button id="Three2" class="position" onclick="ClickPositon()" value="B: Ly biệt"><b>B</b>: Ly biệt</button>
+        <button id="Three3" class="position" onclick="ClickPositon()" value="C: Chung thủy"><b>C</b>: Chung thủy</button>
+    </div>
+    <div class="cauhoi4">
+        <button id="Four" class="menu" value="Thính được làm từ gì ?">Thính được làm từ gì ?</button>
+        <button id="Four1" class="menu" onclick="ClickMenu1()" value="A: Gạo"><b>A</b>: Gạo</button>
+        <button id="Four2" class="menu" onclick="ClickMenu()" value="B: Bột Sắn"><b>B</b>: Bột Sắn</button>
+        <button id="Four3" class="menu" onclick="ClickMenu()" value="C: Mía"><b>C</b>: Mía</button>
+    </div>
+    <div class="cauhoi5">
+        <button id="five" class="menu1"  value="Bu là gì?">"Bu" là gì?</button>
+        <button id="five1" class="menu1" onclick="ClickHere1()" value="A: Mẹ"><b>A:</b> Mẹ</button>
+        <button id="five2" class="menu1" onclick="ClickHere()" value="B: Một loại gia vị"><b>B:</b>Một loại gia vị</button>
+        <button id="five3" class="menu1" onclick="ClickHere()" value="C: Một điệu hát"><b>C:</b>Một điệu hát</button>
+    </div>
+    <script>
+        function ClickButton() {
+            alert("Chúng tôi rất tiếc")
+        }
+        function Click() {
+            alert("Xin chúc mừng bạn đã trả lời đúng")
+        }
+        function ClickQuiz1() {
+            alert("Xin chúc mừng bạn đã trả lời đúng")
+        }
+        function ClickQuiz2() {
+            alert("Chúng tôi rất tiếc")
+        }
+        function ClickPositon() {
+            alert("Chúng tôi rất tiếc")
+        }
+        function ClickPositon1() {
+            alert("Xin chúc mừng bạn đã trả lời đúng")
+        }
+        function ClickMenu1() {
+            alert("Xin chúc mừng bạn đã trả lời đúng")
+        }
+        function ClickPositon() {
+            alert("Chúng tôi rất tiếc")
+        }
+        function ClickHere() {
+            alert("Chúng tôi rất tiếc")
+        }
+        function ClickHere1() {
+            alert("Xin chúc mừng bạn đã trả lời đúng")
+        }
+    </script>
+</body>
+
+</html>
