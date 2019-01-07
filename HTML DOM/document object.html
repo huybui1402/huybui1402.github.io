@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #p1 {
+        width: 60%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #p2 {
+        width: 60%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #p3 {
+        width: 60%;
+        margin: auto;
+        margin-top: 30px;
+    }
+</style>
+
+<body>
+    <h1>Hello</h1>
+    <p id="p1" class="my-name">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+        has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+        and scrambled it to make a type specimen book</p>
+    <p id="p2" class="my-name">It is a long established fact that a reader will be distracted by the readable content
+        of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+        distribution of letters, as opposed to using</p>
+    <p id="p3" class="my-name">There are many variations of passages of Lorem Ipsum available, but the majority have
+        suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+        believable. If you are going to use a passage of Lorem Ipsum,</p>
+    <select onchange='changecolor(this)'>
+        <option value="select">Color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="gray">Gray</option>
+        <option value="yellow">Yellow</option>
+        <option value="white">White</option>
+    </select>
+    <script>
+        //bai1
+        function changeFontSize(x) {
+            document.getElementById("p1").style.fontSize = x + "px";
+            document.getElementById("p2").style.fontSize = x + "px";
+            document.getElementById("p3").style.fontSize = x + "px";
+
+        }
+        //bai2
+        function increaseFontSize(paragraph) {
+            let c = parseInt(document.getElementById(paragraph).style.fontSize)
+            if (c < 30) {
+                document.getElementById(paragraph).style.fontSize = c + 1 + "px"
+            }
+            else {
+                document.getElementById(paragraph).style.fontSize = 30 + "px"
+            }
+
+        }
+        //bai3
+        function decreaseFontSize(paragraph) {
+            let a = parseInt(document.getElementById(paragraph).style.fontSize)
+            if (a > 10) {
+                document.getElementById(paragraph).style.fontSize = a - 1 + "px"
+            }
+            else {
+                document.getElementById(paragraph).style.fontSize = 10 + "px"
+            }
+        }
+
+        //bai4
+
+        function Color() {
+            var h = document.getElementById("")
+            return h
+        }
+        document.getElementById("p1").style.color = "green"
+        function changecolor() {
+            var p = document.getElementById("")
+            return p
+        }
+        document.getElementById("p2").style.color = "yellow"
+        function color() {
+            var g = document.getElementById("")
+            return g
+        }
+        document.getElementById("p3").style.color = "red"
+        //bai5
+        function changecolor(color) {
+            document.getElementsByTagName('body')[0].style.background = color.value
+        }
+
+        //bai6
+        function copyContent() {
+          p[0].innerHTML == p[1].innerHTML
+        }
+    </script>
+</body>
+
+</html>
