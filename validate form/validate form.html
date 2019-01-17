@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet"  href="validate.html">
+    <link rel="stylesheet" href="validate.html">
     <title>Document</title>
 </head>
 <style>
@@ -14,7 +14,7 @@
         background-color:#80808047;
     }
     .signupbtn{
-    width: 65%;
+    width: 60%;
     height: 40px;
     outline: none;
     border-radius: 10px;
@@ -41,83 +41,121 @@ margin: 5px 0 22px 0;
 label{
     margin-top: 10px;
 }
+.item{
+    width:100%
+}
+.item1 img{
+    margin-top:80px;
+    margin-left:100px;
+}
+.container{
+    display:flex;
+    
+}
+#name{
+    width:100%;
+}
+#email{
+    width:100%;
+}
+#pass{
+    width:100%;
+}
+#Telephone{
+    width:100%;
+}
+#Address{
+    width:100%;
+}
+#submid{
+    width:105%;
+    height:60px;
+}
+#male{
+    margin-top:10px;
+}
 </style>
 
 <body>
-    <div>
+    <div class="container">
+        <div class="item item1">
 
-        <h1>Đăng ký tài khoản</h1>
-        <form action="validate.html" id="myform">
-            <input type="text" name="name" id="name" placeholder="Name" />
-            <span class="error"></span>
-            <input type="email" name="email" id="email" placeholder="Email" />
-            <span class="error"></span> </br>
-            <input type="password" name="pass" id="pass" placeholder="Mật khẩu" style="width:60%;" />
-            <span class="error"></span> </br>
-            <input type="text" name="Telephone" id="Telephone" placeholder="Số điện thoại" style="width:60%;" />
-            <span class="error"></span> </br>
-            <input type="text" name="Address" id="Address" placeholder="Địa chỉ" style="width:60%;" />
-            <span class="error"></span> </br>
-            <select name="year" id="year" style="height:27px;">
-                <option>chọn năm sinh ...</option>
-                <option value="1976">1976</option>
-                <option value="1977">1977</option>
-                <option value="1978">1978</option>
-                <option value="1979">1979</option>
-                <option value="1980">1980</option>
-            </select>
-            </br>
-            <input type="radio" name="gender" id="male" value="male" /> <label for="male">nam</label>
-            <input type="radio" name="gender" id="female" value="female" /> <label for="female">nữ</label> </br>
-            <input type="submit" value="Đăng kí" />
-        </form>
-     
+            <h1>Đăng ký tài khoản</h1>
+            <form action="validate.html" id="myform">
+                <input type="text" name="name" id="name" placeholder="Name"  />
+                <span class="error"></span>
+                <input type="email" name="email" id="email" placeholder="Email" />
+                <span class="error"></span> </br>
+                <input type="password" name="pass" id="pass" placeholder="Mật khẩu"  />
+                <span class="error"></span> </br>
+                <input type="text" name="Telephone" id="Telephone" placeholder="Số điện thoại" />
+                <span class="error"></span> </br>
+                <input type="text" name="Address" id="Address" placeholder="Địa chỉ"  />
+                <span class="error"></span> </br>
+                <select name="year" id="year" style="height:27px;width:200px;">
+                    <option>chọn năm sinh ...</option>
+                    <option value="1976">1976</option>
+                    <option value="1977">1977</option>
+                    <option value="1978">1978</option>
+                    <option value="1979">1979</option>
+                    <option value="1980">1980</option>
+                </select>
+                </br>
+                <input type="radio" name="gender" id="male" value="male" /> <label for="male">nam</label>
+                <input type="radio" name="gender" id="female" value="female" /> <label for="female">nữ</label> </br>
+                <input type="submit" value="Đăng kí" id="submid" />
+            </form>
+
+        </div>
+        <div class="item item1">
+            <img src="./anhdep.png" alt="anhdep" style="width:400px">
+        </div>
     </div>
-    <script src = "https://code.jquery.com/jquery-3.3.1.min.js">
-        
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+
+
     </script>
     <script>
-            $('#myform').on('submit', function () {
-                var isValid = true
-                if ($('#name').val().trim() == '') {
-                    $('#name').next('span').text('Name is empty');
-                    isValid = false;
-                }
-                else {
-                    $('#name').next('span').text('');
-                }
-                if ($('#email').val().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/) == null) {
-                    $('#email').next('span').text('Email is invalid');
-                    isValid = false
-                } else {
-                    $('#email').next('span').text('');
-                }
-                if ($('#pass').val().trim() == '') {
-                    $('#pass').next('span').text('pass is empty');
-                    isValid = false;
-                }
-                else {
-                    $('#pass').next('span').text('');
-                }
-                if ($('#Telephone').val().trim() == '') {
-                    $('#Telephone').next('span').text('Telephone is empty');
-                    isValid = false;
-                }
-                else {
-                    $('#Telephone').next('span').text('');
-                }
-                if ($('#Address').val().trim() == '') {
-                    $('#Address').next('span').text('Address is empty');
-                    isValid = false;
-                }
-                else {
-                    $('#Address').next('span').text('');
-                }
-               
-                return isValid;
-              
-            })
+        $('#myform').on('submit', function () {
+            var isValid = true
+            if ($('#name').val().trim() == '') {
+                $('#name').next('span').text('Name is empty');
+                isValid = false;
+            }
+            else {
+                $('#name').next('span').text('');
+            }
+            if ($('#email').val().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/) == null) {
+                $('#email').next('span').text('Email is invalid');
+                isValid = false
+            } else {
+                $('#email').next('span').text('');
+            }
+            if ($('#pass').val().trim() == '') {
+                $('#pass').next('span').text('pass is empty');
+                isValid = false;
+            }
+            else {
+                $('#pass').next('span').text('');
+            }
+            if ($('#Telephone').val().trim() == '') {
+                $('#Telephone').next('span').text('Telephone is empty');
+                isValid = false;
+            }
+            else {
+                $('#Telephone').next('span').text('');
+            }
+            if ($('#Address').val().trim() == '') {
+                $('#Address').next('span').text('Address is empty');
+                isValid = false;
+            }
+            else {
+                $('#Address').next('span').text('');
+            }
+
+            return isValid;
+
+        })
     </script>
 
 
