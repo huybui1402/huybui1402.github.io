@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+#button{
+    margin-top: 30px;
+    width: 100px;
+    font-size: 20px;
+    background-color:#8080808a;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+</style>
+<body>
+    <form name="myform">
+        <h3>Câu 1: 1+1=?</h3></br>
+        <input type="radio" name="q1" value="a">1</br>
+        <input type="radio" name="q1" value="b">2</br>
+        <input type="radio" name="q1" value="c">3</br>
+        <input type="radio" name="q1" value="d">4</br>
+        <h3>Câu 2 : 5+6=?</h3></br>
+        <input type="radio" name="q2" value="a">14</br>
+        <input type="radio" name="q2" value="b">11</br>
+        <input type="radio" name="q2" value="c">15</br>
+        <input type="radio" name="q2" value="d">16</br>
+        <h3>Câu 3 : 9+9=?</h3></br>
+        <input type="radio" name="q3" value="a">18</br>
+        <input type="radio" name="q3" value="b">19</br>
+        <input type="radio" name="q3" value="c">20</br>
+        <input type="radio" name="q3" value="d">21</br>
+        <h3>Câu 4 : 4+4=?</h3></br>
+        <input type="radio" name="q4" value="a">9</br>
+        <input type="radio" name="q4" value="b">8</br>
+        <input type="radio" name="q4" value="c">7</br>
+        <input type="radio" name="q4" value="d">6</br>
+        <h3>Câu 3; 5*6=?</h3></br>
+        <input type="radio" name="q5" value="a">29</br>
+        <input type="radio" name="q5" value="b">30</br>
+        <input type="radio" name="q5" value="c">31</br>
+        <input type="radio" name="q5" value="d">32</br>
+        <input type="button" value="submit" onclick="check()" id="button">
+    </form>
+    <div>
+        <p id="number_correct"></p>
+    </div>
+    <script>
+        function check() {
+            var q1 = document.myform.q1.value;
+            var q2 = document.myform.q2.value;
+            var q3 = document.myform.q3.value;
+            var q4 = document.myform.q4.value;
+            var q5 = document.myform.q5.value;
+            var x = 0;
+
+            if (q1 == "b") {
+                x++
+            }
+
+            if (q2 == "b") {
+                x++
+            }
+
+            if (q3 == "a") {
+                x++
+            }
+
+            if (q4 == "b") {
+                x++
+            }
+
+            if (q5 == "b") {
+                x++
+            }
+            if (x == 5) {
+                window.location.assign("quiz1.html")
+            }
+          
+             if(x<5){
+                 alert("bạn trở lời được"+x)
+             }
+         
+        }
+    </script>
+</body>
+
+</html>
