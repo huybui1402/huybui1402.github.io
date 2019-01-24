@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+
+
+    <title>Document</title>
+</head>
+<style>
+    .one {
+        right: 10px;
+    }
+
+    .ui-state-highligh {
+        background-color: #fafafa;
+        height: calc(1.5rem + 20px)
+    }
+    .collection-item .badge{
+        margin-right:-10px;
+        padding-right:0;
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Logo</a>
+
+        </div>
+    </nav>
+    <section class="container">
+        <div class="row">
+            <div class="col m4">
+                <div class="card">
+                    <h5 style="padding-left:15px;" class="red lighten-1 white-text">TODO (4)</h5>
+                    <div class="collection sorted-list" id="todo">
+                        <div href="#!" class="collection-item">
+                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
+                        </div>
+                        <div href="#!" class="collection-item">
+                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
+                        </div>
+                        <div href="#!" class="collection-item">
+                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
+                        </div>
+                        <div href="#!" class="collection-item">
+                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <div class="input-field">
+                            <input type="text" id="new_job_done" onkeydown="app.newJob(event,'done', this)">
+                            <label for="new_job_done">New Job</label>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <h5 style="padding-left:15px;" class="orange lighten-1 white-text">COTO (1)</h5>
+                    <div class="collection sorted-list" id="coto">
+                        <div href="#!" class="collection-item">
+                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
+                        </div>
+                        <div class="action">
+                            <div class="input-field">
+                                <input type="text" id="new_job_done" onkeydown="app.newJob(event,'done', this)">
+                                <label for="new_job_done">New Job</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <h5 style="padding-left:15px;" class="green lighten-1 white-text">CENTER (3)</h5>
+                    <div class="collection sorted-list" id="center">
+                        <div href="#!" class="collection-item">
+                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
+                        </div>
+                        <div href="#!" class="collection-item">
+                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
+                        </div>
+                        <div href="#!" class="collection-item">
+                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
+                        </div>
+
+                    </div>
+                    <div class="action">
+                        <div class="input-field">
+                            <input type="text" id="new_job_done" onkeydown="app.newJob(event,'done', this)">
+                            <label for="new_job_done">New Job</label>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+           
+        </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+      var app ={}
+        
+            $(function () {
+                $('.sorted-list').sortable({
+                    connectWith: '.sorted-list',
+                //     placeholder: 'ui-state-highlight',
+                //    start: function(event,ui){
+                //        $(ui.item[0].addClass('dragging'));
+                //    },
+                //    stop: function(event,ui){
+                //        $(ui.item[0].removeClass('dragging'));
+                //    }
+                });
+            });
+    </script>
+</body>
+
+</html>
