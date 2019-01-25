@@ -17,35 +17,46 @@
     outline: none;
     cursor: pointer;
 }
+*{
+    color: white;
+}
+body{
+    padding-left: 150px;
+   background-image: url('./anh1.jpg')
+   
+}
+h3{
+    color: red;
+}
 </style>
 <body>
     <form name="myform">
         <h3>Câu 1: 1+1=?</h3></br>
-        <input type="radio" name="q1" value="a">1</br>
-        <input type="radio" name="q1" value="b">2</br>
-        <input type="radio" name="q1" value="c">3</br>
-        <input type="radio" name="q1" value="d">4</br>
+        <input type="radio" name="q1" value="a">Đáp án A : 1</br>
+        <input type="radio" name="q1" value="b">Đáp án B : 2</br>
+        <input type="radio" name="q1" value="c">Đáp án C : 3</br>
+        <input type="radio" name="q1" value="d">Đáp án D : 4</br>
         <h3>Câu 2 : 5+6=?</h3></br>
-        <input type="radio" name="q2" value="a">14</br>
-        <input type="radio" name="q2" value="b">11</br>
-        <input type="radio" name="q2" value="c">15</br>
-        <input type="radio" name="q2" value="d">16</br>
+        <input type="radio" name="q2" value="a">Đáp án A : 14</br>
+        <input type="radio" name="q2" value="b">Đáp án B : 11</br>
+        <input type="radio" name="q2" value="c">Đáp án C : 15</br>
+        <input type="radio" name="q2" value="d">Đáp án D : 16</br>
         <h3>Câu 3 : 9+9=?</h3></br>
-        <input type="radio" name="q3" value="a">18</br>
-        <input type="radio" name="q3" value="b">19</br>
-        <input type="radio" name="q3" value="c">20</br>
-        <input type="radio" name="q3" value="d">21</br>
+        <input type="radio" name="q3" value="a">Đáp án A : 18</br>
+        <input type="radio" name="q3" value="b">Đáp án B : 19</br>
+        <input type="radio" name="q3" value="c">Đáp án C : 20</br>
+        <input type="radio" name="q3" value="d">Đáp án D : 21</br>
         <h3>Câu 4 : 4+4=?</h3></br>
-        <input type="radio" name="q4" value="a">9</br>
-        <input type="radio" name="q4" value="b">8</br>
-        <input type="radio" name="q4" value="c">7</br>
-        <input type="radio" name="q4" value="d">6</br>
+        <input type="radio" name="q4" value="a">Đáp án A : 9</br>
+        <input type="radio" name="q4" value="b">Đáp án B : 8</br>
+        <input type="radio" name="q4" value="c">Đáp án C : 7</br>
+        <input type="radio" name="q4" value="d">Đáp án D : 6</br>
         <h3>Câu 3; 5*6=?</h3></br>
-        <input type="radio" name="q5" value="a">29</br>
-        <input type="radio" name="q5" value="b">30</br>
-        <input type="radio" name="q5" value="c">31</br>
-        <input type="radio" name="q5" value="d">32</br>
-        <input type="button" value="submit" onclick="check()" id="button">
+        <input type="radio" name="q5" value="a">Đáp án A : 29</br>
+        <input type="radio" name="q5" value="b">Đáp án B : 30</br>
+        <input type="radio" name="q5" value="c">Đáp án C : 31</br>
+        <input type="radio" name="q5" value="d">Đáp án D : 32</br>
+        <input type="button" value="submit" onclick="check()" id="button" style="width:200px;">
     </form>
     <div>
         <p id="number_correct"></p>
