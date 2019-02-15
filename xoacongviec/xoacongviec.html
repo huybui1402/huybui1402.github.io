@@ -27,15 +27,25 @@
         margin-right:-10px;
         padding-right:0;
     }
-    .collection-item i:hover{
-background-color: gray;
-cursor: pointer;
+    label{
+        padding-left: 20px;
     }
-    
-   .card .collection .collection-item .dragging{
-   -ms-transform: rotate(1deg);
--webkit-transform: rotate(1deg);
-transform: rotate(1deg)
+    h5{
+       padding: 15px;
+   }
+   #modal-confirm{
+       width:370px;
+       height: 180px;
+       position: relative;
+       margin: auto;
+       top: -500px;
+       background-color: #808080cc;
+       padding-top: 7px;
+       text-align: center;
+       border-radius: 30px;
+       color: white;
+     display: none;
+     /* position: absolute; */
    }
    
 </style>
@@ -51,25 +61,14 @@ transform: rotate(1deg)
         <div class="row">
             <div class="col m4">
                 <div class="card">
-                    <h5 style="padding-left:15px;" class="red lighten-1 white-text">TODO (4)</h5>
+                    <h5 style="padding-left:15px;" class="red lighten-1 white-text">TODO (0)</h5>
                     <div class="collection sorted-list" id="todo">
-                        <div href="#!" class="collection-item" onclick="xoa(this)" id="clickme5">
-                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
-                        </div>
-                        <div href="#!" class="collection-item" onclick="xoa(this)" id="clickme4">
-                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
-                        </div>
-                        <div href="#!" class="collection-item" onclick="xoa(this)" id="clickme3">
-                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
-                        </div>
-                        <div href="#!" class="collection-item" onclick="xoa(this)" id="clickme2">
-                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
-                        </div>
+
                     </div>
                     <div class="action">
                         <div class="input-field">
-                            <input type="text" id="new_job_done" onkeydown="app.newJob(event,'todo', this)" style="padding-top: 20px">
-                            <label for="new_job_done" style="padding-left:20px;">New Job</label>
+                            <input type="text" id="new_job_done" onkeydown="app.newJob(event,'todo', this)" style="padding-top: 20px;padding-left:15px;">
+                            <label for="new_job_done">New Job</label>
                         </div>
                     </div>
                 </div>
@@ -77,39 +76,30 @@ transform: rotate(1deg)
             </div>
             <div class="col m4">
                 <div class="card">
-                    <h5 style="padding-left:15px;" class="orange lighten-1 white-text">COTO (1)</h5>
+                    <h5 style="padding-left:15px;" class="orange lighten-1 white-text">COTO (0)</h5>
                     <div class="collection sorted-list" id="coto">
-                        <div href="#!" class="collection-item" onclick="xoa(this)" id="clickme1">
-                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
-                        </div>
-                        <div class="action">
-                            <div class="input-field">
-                                <input type="text" id="new_job_done" onkeydown="app.newJob(event,'coto', this)" style="padding-top: 20px">
-                                <label for="new_job_done" style="padding-left:20px;">New Job</label>
-                            </div>
+
+
+                    </div>
+                    <div class="action">
+                        <div class="input-field">
+                            <input type="text" id="new_job_done" onkeydown="app.newJob(event,'coto', this)" style="padding-top: 20px;padding-left:15px;">
+                            <label for="new_job_done">New Job</label>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col m4">
                 <div class="card">
-                    <h5 style="padding-left:15px;" class="green lighten-1 white-text">CENTER (3)</h5>
+                    <h5 style="padding-left:15px;" class="green lighten-1 white-text">CENTER (0)</h5>
                     <div class="collection sorted-list" id="center">
-                        <div href="#!" class="collection-item" onclick="xoa(this)" id="clickme">
-                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
-                        </div>
-                        <div href="#!" class="collection-item" onclick="xoa(this)" id="batman">
-                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
-                        </div>
-                        <div href="#!" class="collection-item" onclick="xoa(this)" id="cation">
-                            Alvin <span class="badge"><i class="fas fa-trash-alt"></i></span>
-                        </div>
+
 
                     </div>
                     <div class="action">
                         <div class="input-field">
-                            <input type="text" id="new_job_done" onkeydown="app.newJob(event,'center', this)" style="padding-top: 20px" >
-                            <label for="new_job_done" style="padding-left:20px;">New Job</label>
+                            <input type="text" id="new_job_done" onkeydown="app.newJob(event,'center', this)" style="padding-top: 20px;padding-left:20px;">
+                            <label for="new_job_done">New Job</label>
                         </div>
                     </div>
                 </div>
@@ -117,81 +107,150 @@ transform: rotate(1deg)
             </div>
 
         </div>
-
     </section>
-    <div id="modal-confirm" class="modal">
-        <div class="modal-content">
-            <h4>Confirm Delete</h4>
-            <p>Are you sure to delete this job?</p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action waves-effect waves-light btn" id="btn-delete">Candel</a>
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-        </div>
-    </div>
-    <!-- <div class="modal-content">
-        <h4>Confirm Delete</h4>
-        <p>Are you sure to delete this job ?</p>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-action waves-effect waves-light btn" id="btn-delete">Agree</a>
-        <a href="#!" class="modal-action modal-close  waves-effct waves-green btn-flat">Cancel</a>
-    </div> -->
 
+    <div id="modal-confirm" >
+        <div class="modal-content">
+            <h4>
+                Xoá công việc
+            </h4>
+            <p>Bạn có muốn xoá công việc này ?</p>
+        </div>
+        <div>
+            <a href="#!" class="modal-action waves-effect waves-light btn" id="btn-delete">Agree</a>
+            <a href="#!" class="modal-action modal-close waves-green btn-flat">Cancel</a>
+        </div>
+    </div>
+
+    <!--     
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+    
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div> -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <script>
+        var COLUMN_TYPE = ['todo', 'coto', 'center']
+        var DB = {
+            getData: function () {
+                if (typeof (Storage) !== "undefined") {
+                    var data;
+                    try {
+                        data = JSON.parse(localStorage.getItem('list')) || {};
+                    }
+                    catch (error) {
+                        data = {}
+                    }
+                    return data;
+                }
+                else {
+                    alert("Sorry! No Web Storage support..");
+                }
+                return {};
+            },
+            setData: function (data) {
+                localStorage.setItem('list', JSON.stringify(data))
+            }
+        };
 
+        var list = DB.getData();
         var app = {
             newJob: function (e, type, input) {
                 var jobName = $(input).val()
                 var event = window.event || e;
-                if (event.keyCode === 13) {
+                if (event.keyCode === 13 && jobName.trim() !== '') {
+                    if (!list[type]) list[type] = [];
+                    list[type].push(jobName);
+                    DB.setData(list);
                     this.addJobToList(type, jobName)
                     $(input).val('')
                 }
             },
             addJobToList: function (type, jobName) {
                 var item = '<div href="#!" class="collection-item">' + jobName +
-                    ' <span class="badge" onclick="app.deleteJob(this)"><i class="fas fa-trash-alt"></i></span>' +
+                    '<span class="badge" onclick="app.deleteJob(this)"><i class="fas fa-trash-alt"></i></span>' +
                     '</div>'
+
                 $('#' + type).append(item);
             },
+
             deleteJob: function (span) {
-
+                var modal = $('#modal-confirm');
+                // var btn = $('#btn-delete');
                 var item = $(span).parent();
-                item.remove()
+                modal.show()
+                // item.remove();
 
-            },
+                // btn.off('click')
+                $('#btn-delete').on('click', function () {
+                    // var columnType = item.parent().attr('id')
+                    // var itemPosition = $('#' + columnType + '.collection-item').index(item);
+                    // console.log(itemPosition)
+                    // list[columnType].splice(itemPosition, 1);
+                    // // DB.setData(list);
+                    item.remove();
+                    modal.hide();
+                });
+            }
 
-        }
+        };
 
-        function xoa(thediv) {
-            $(`#${thediv.id}`).remove()
+        // function xoa(thediv) {
+        //     $(`#${thediv.id}`).remove()
 
-        }
+        // }
 
 
         //  $("span").click(function(){
         //      $("#cation").remove();
         //  })
+        // 
 
 
 
 
         $(function () {
+            COLUMN_TYPE.forEach(function (type) {
+                var columnType = list[type] || [];
+                columnType.forEach(function (jobName) {
+                    app.addJobToList(type, jobName);
+                })
+
+            });
+            // var doing = list['doing'] || [];
+            // doing.forEach(function(job){
+            // app.addJobToList('doing',job)
+            // });
             $('.sorted-list').sortable({
                 connectWith: '.sorted-list',
-                //     placeholder: 'ui-state-highlight',
-                //    start: function(event,ui){
-                //        $(ui.item[0].addClass('dragging'));
-                //    },
-                //    stop: function(event,ui){
-                //        $(ui.item[0].removeClass('dragging'));
-                //    }
+                placeholder: 'ui-state-highlight',
+                start: function (event, ui) {
+                    ui.item.oldColumntype = ui.item.context.parentElement.getAttribute('id');
+                    ui.item.oldItemPosition = ui.item.index()
+                },
+                stop: function (event, ui) {
+                    var item = ui.item;
+                    var oldColumntype = item.oldColumntype;
+                    var oldItemPosition = item.oldItemPosition;
+                    var newColumnType = item.context.parentElement.getAttribute('id');
+                    var newItemPosition = item.index();
+                    list[oldColumntype].splice(oldItemPosition, 1)
+                    list[newColumnType].splice(newItemPosition, 0, item[0].innerText);
+                    DB.setData(list)
+                }
+
             });
         });
+
     </script>
 </body>
 
