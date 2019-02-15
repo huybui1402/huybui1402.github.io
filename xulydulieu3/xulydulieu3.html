@@ -44,7 +44,7 @@
        text-align: center;
        border-radius: 30px;
        color: white;
-     /* display: none; */
+     display: none;
    }
    
 </style>
@@ -186,17 +186,18 @@
                 var modal = $('#modal-confirm');
                 var btn = $('#btn-delete');
                 var item = $(span).parent();
-
-                item.remove();
+                modal.show()
+                // item.remove();
 
                 btn.off('click')
                 btn.on('click', function () {
                     var columnType = item.parent().attr('id')
                     var itemPosition = $('#' + columnType + '.collection-item').index(item);
+                    // console.log(itemPosition)
                     list[columnType].splice(itemPosition, 1);
                     DB.setData(list);
-                    // item.remove();
-                    // modal.closeModal();
+                    item.remove();
+                    modal.hide();
                 });
             }
 
@@ -232,20 +233,20 @@
                 connectWith: '.sorted-list',
                 placeholder: 'ui-state-highlight',
                 start: function (event, ui) {
-                ui.item.oldColumntype = ui.item.context.parentElement.getAttribute('id');
-                  ui.item.oldItemPosition = ui.item.index()
+                    ui.item.oldColumntype = ui.item.context.parentElement.getAttribute('id');
+                    ui.item.oldItemPosition = ui.item.index()
                 },
                 stop: function (event, ui) {
-                 var item = ui.item;
-                 var oldColumntype = item.oldColumntype;
-                 var oldItemPosition = item.oldItemPosition;
-                 var newColumnType = item.context.parentElement.getAttribute('id');
-                 var newItemPosition = item.index();
-                 list[oldColumntype].splice(oldItemPosition,1)
-                 list[newColumnType].splice(newItemPosition,0 , item[0].innerText);
-                 DB.setData(list)
+                    var item = ui.item;
+                    var oldColumntype = item.oldColumntype;
+                    var oldItemPosition = item.oldItemPosition;
+                    var newColumnType = item.context.parentElement.getAttribute('id');
+                    var newItemPosition = item.index();
+                    list[oldColumntype].splice(oldItemPosition, 1)
+                    list[newColumnType].splice(newItemPosition, 0, item[0].innerText);
+                    DB.setData(list)
                 }
-                
+
             });
         });
 
