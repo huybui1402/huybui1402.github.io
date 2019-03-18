@@ -22,6 +22,10 @@
   float: right; 
   
 }
+.thumbnail{
+    border: none;
+    background-color: transparent;
+}
 .navbar-brand{
     font-family: 'ZCOOL QingKe HuangYou', cursive;
 font-family: 'Libre Baskerville', serif;
@@ -93,7 +97,7 @@ font-family: 'Abril Fatface', cursive;
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#" style="color:#B89F80; font-size: 24px;">HappyFamily</a>
+                    <a class="navbar-brand" href="#" style="color:#B89F80; font-size: 24px;padding-left:100px;">HappyFamily</a>
                 </div>
 
 
@@ -130,34 +134,82 @@ font-family: 'Abril Fatface', cursive;
         </div>
 
     </header>
-    <section>
+    <section style="margin-top:50px;">
         <div class="tab">
             <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Đám cưới</button>
             <button class="tablinks" onclick="openCity(event, 'Paris')">Sinh nhật</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Thời trang/Ca nhạc</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Thời trang/Ca nhạc/</button>
         </div>
 
         <div id="London" class="tabcontent">
-           <img src="./menu4790.jpg" alt="damcuoi" class="img-responsive">
+            <img src="./menu1-min.jpg" alt="damcuoi" class="img-responsive">
         </div>
 
         <div id="Paris" class="tabcontent">
-                <img src="./sinhnhat.png" alt="sinhnhat" class="img-responsive">
+            <img src="./menu2-min.jpg" alt="sinhnhat" class="img-responsive">
         </div>
 
         <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
+            <img src="./menu3-min.jpg" alt="thucdon" class="img-responsive">
         </div>
 
     </section>
     <div class="address" style="margin-top:100px;">
-            <div class="one" style="height:400px;width:100%; background-image:url('lacinzia-wedding.jpg')">
-                <div class="one1">
-                    <img src="./Screen Shot 2019-03-09 at 10.33.30 PM.png" alt="wedding" class="img-responsive" style="margin:auto;height: 400px;">
-                </div>
+        <div class="one" style="height:400px;width:100%; background-image:url('./Love-and-Wedding-The-Pearl-Resort_compressed.jpg')">
+            <div class="one1">
+                <img src="./Screen Shot 2019-03-09 at 10.33.30 PM.png" alt="wedding" class="img-responsive" style="margin:auto;height: 400px;">
             </div>
         </div>
+    </div>
+
+    <footer style="background-color:#cde6c7">
+        <section class="container" style="padding-left:70px;">
+
+            <div class="posts">
+                <div class="section">
+                    <div class="col-md-4">
+                        <div class="item">
+
+                            <h3 style="color:#B89F80">Trung Tâm HappyFamily</h3></br>
+                            <p style="color:#B89F80">Địa chỉ: Xóm 9 - Xã Xuân TiếnTiến-Huyện Xuân Trường</p>
+                            <p style="color:#B89F80">Tỉnh Nam Định</p>
+
+                            </br>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="thumbnail">
+                                <h3 style="color:#B89F80">Liên hệ</h3>
+                                <p style="color:#B89F80">Hotline: 0387664262</p>
+                                <p style="color:#B89F80">Email:Huybui14022000@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="thumbnail">
+                                <h3 style="color:#B89F80">Kết nối với chúng tôi</h3>
+                                <a href="https://www.facebook.com/profile.php?id=100006194080235"><i class="fab fa-facebook-square"
+                                        style="font-size:50px"></i></a>
+                                <a href="https://www.youtube.com/channel/UCrBxg9GdkPsV3yopKfzJ_AQ?view_as=subscriber"
+                                    style="color:red;"> <i class="fab fa-youtube-square" style="font-size:50px"></i></a>
+                                <a href="https://www.instagram.com/canhuy47/" style="color:purple;"><i class="fab fa-instagram"
+                                        style="font-size:50px"></i></a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </footer>
+
     <script>
         function openCity(evt, cityName) {
             var i, tabcontent, tablinks;

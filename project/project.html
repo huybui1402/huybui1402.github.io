@@ -11,10 +11,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="uudai.html">
+    <link rel="stylesheet" href="tintuc.html">
+    <link rel="stylesheet" href="dattiec.html">
+    <link rel="stylesheet" href="thucdon.html">
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  
     <title>Document</title>
 </head>
 <style>
@@ -23,13 +27,13 @@
   float: right; 
   
 }
-body{
-    background-image: url("img_parallax.jpg");
+/* body{
+    background-image: url("./damcuoiimg1.jpg");
     background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 .container{
     width: 100%;
     
@@ -39,7 +43,7 @@ body{
     border: none;
     background-color: transparent;
 }
-section,.container{
+.section,.container{
     width: 100%;
     padding: 0;
     margin-top: 0
@@ -69,7 +73,7 @@ section,.container{
     background-image: url('background-menu.jpg')
 }
 .row{
-    background-image: url('front_slider_2.jpg')
+    background-image: url()
 }
 .thumbnail img{
 padding-top: 15px;
@@ -106,6 +110,16 @@ font-family: 'Abril Fatface', cursive;
 .item #mid{
 outline: none;
 }
+img {
+  transition: all 0.5s ease
+ 
+}
+
+.thumbnail img:hover {
+ transform: translate(0,-5px);
+ box-shadow:0px 5px 5px 0px rgba(0, 0, 0,0.2)
+
+}
 </style>
 
 <body>
@@ -122,7 +136,7 @@ outline: none;
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#" style="color:#B89F80; font-size: 24px;">HappyFamily</a>
+                    <a class="navbar-brand" href="project.html" style="color:#B89F80; font-size: 24px;padding-left:100px;">HappyFamily</a>
                 </div>
 
 
@@ -142,10 +156,10 @@ outline: none;
                             </ul>
                         </li>
                         </li>
-                        <li><a href="#" style="color:#B89F80;">Ưu đãi</a></li>
-                        <li><a href="#" style="color:#B89F80;">Thực đơn</a></li>
-                        <li><a href="#" style="color:#B89F80;">Tin tức</a></li>
-                        <li><a href="#" style="color:#B89F80;">Đặt tiệc</a></li>
+                        <li><a href="uudai.html" style="color:#B89F80;">Ưu đãi</a></li>
+                        <li><a href="thucdon.html" style="color:#B89F80;">Thực đơn</a></li>
+                        <li><a href="tintuc.html" style="color:#B89F80;">Tin tức</a></li>
+                        <li><a href="dattiec.html" style="color:#B89F80;">Đặt tiệc</a></li>
 
                     </ul>
 
@@ -204,8 +218,8 @@ outline: none;
         </p>
         <p>Đảm bảo phục vụ quý vị với đầy đủ ghế ngồi, ánh sáng tốt , âm thanh chất lượng tốt nhất từ trước tới nay.</p>
     </div>
-    <section class="container">
-
+    <section class="container" style="background-image: url('./damcuoimg.jpg')">
+        <!-- <img src="./damcuoimg.jpg" alt=""> -->
         <div class="posts">
             <div class="row">
                 <div class="col-md-6">
@@ -232,7 +246,7 @@ outline: none;
                                     tạo lên hạnh phúc,</p>
                                 <p style="color:white">tạo lên những tiếng cười, đem đến cho các bạn một tương lai.</p>
                             </div>
-                            <button style="width:100px; height:30px;background-color:yellow;"><a href="#">Xem thêm</a></button>
+                            <a href="damcuoi.html" style="color:white;"><button style="width:100px; height:30px;background-color:#B89F80;">Xem thêm</button></a>
                         </div>
 
                     </div>
@@ -254,7 +268,8 @@ outline: none;
                             <p>nhưng cũng chẳng thể nào tổ chức được vì hoản cảnh khó khăn , do không có thời gian tổ
                                 chức ngay tại nhà.</p>
                             <p>Chúng tôi luôn là người sẵn sàng giúp đỡ bạn về những việc đó hãy đến với chúng tôi .</p>
-                            <button style="width:100px; height:30px;background-color:yellow;">Xem thêm</button>
+                            <a href="sinhnhat.html"> <button style="width:100px; height:30px;background-color:#B89F80;color: white;">Xem
+                                    thêm</button></a>
                         </div>
                     </div>
                 </div>
@@ -262,7 +277,7 @@ outline: none;
                     <div class="item">
                         <div class="thumbnail">
                             <div class="thumbnail">
-                                <img src="./birthday.jpg" alt="birthday" class="img-responsive">
+                                <img src="./sinhnhat3.jpg" alt="birthday" class="img-responsive">
                             </div>
                         </div>
                     </div>
@@ -306,23 +321,22 @@ outline: none;
                     </div>
                     <div class="col-md-6">
                         <div class="item">
-                            <div class="thumbnail" style="padding-left:40px;padding-top: 30px;">
 
-                                <div class="thumbnail" style="padding-left:40px;padding-top: 30px;">
 
-                                    <div class="document-2" style="padding-left:60px;">
-                                        <input type="email" name="email" id="email" placeholder="Gmail" style="width: 40%;padding-left: 10px;" />
-                                        <span class="error"></span> </br>
-                                        </br>
-                                        <input type="text" name="noidung" id="noidung" placeholder="Nội dung muốn nói"
-                                            style="width: 60%;height:100px; padding-left: 10px;top:-100px;" class="img-responsive">
-                                        <span class="error"></span></br>
-                                        </br>
-                                    </div>
-                                    <input type="submit" value="Đăng kí" id="mid" style="background-color:#B89F80;margin-left:60px;color:white;" />
+                            <div class="thumbnail" style="padding-left:40px;padding-top: 45px;">
+
+                                <div class="document-2" style="margin-left:-50px;">
+                                    <input type="email" name="email" id="email" placeholder="Gmail" style="width: 40%;padding-left: 10px;" />
+                                    <span class="error"></span> </br>
+                                    </br>
+                                    <input type="text" name="noidung" id="noidung" placeholder="Nội dung muốn nói"
+                                        style="width: 60%;height:100px; padding-left: 10px;top:-100px;" class="img-responsive">
+                                    <span class="error"></span></br>
+                                    </br>
                                 </div>
-
+                                <input type="submit" value="Đăng kí" id="mid" style="background-color:#B89F80;margin-left:60px;color:white;" />
                             </div>
+
 
                         </div>
                     </div>
@@ -331,7 +345,6 @@ outline: none;
 
         </div>
     </section>
-
     <footer style="background-color:#cde6c7">
         <section class="container" style="padding-left:70px;">
 
@@ -379,11 +392,7 @@ outline: none;
         </section>
 
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
-
-
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         $('#myform').on('submit', function () {
             var isValid = true
@@ -408,18 +417,21 @@ outline: none;
             else {
                 $('#Telephone').next('span').text('');
             }
-            if ($('#Telephone').val().trim() == '') {
-                $('#Telephone').next('span').text('Telephone is empty');
+
+            if ($('#year').val().trim() == '') {
+                $('#year').next('span').text('not hinh thuc dat tic');
                 isValid = false;
             }
             else {
-                $('#Telephone').next('span').text('');
+                $('#year').next('span').text('');
             }
+
             return isValid;
 
         })
     </script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"

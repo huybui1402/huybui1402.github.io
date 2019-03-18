@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Libre+Baskerville|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+
+    .collapse{
+  float: right; 
+  
+}
+.item #mid{
+outline: none;
+}
+.container{
+    width: 100%;
+    
+}
+.dropdown-menu{
+    background-image: url('background-menu.jpg')
+}
+.navbar-brand{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Abril Fatface', cursive;
+}
+section,.container{
+    width: 100%;
+    padding: 0;
+    margin-top: 0
+    
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+ 
+}
+.thumbnail{
+    border: none;
+    background-color: transparent;
+}
+.thumbnail img{
+    transition: opacity 0.5s linear;
+    opacity: 1;
+    
+}
+
+body{
+    width: 100%;
+}
+</style>
+
+<body>
+    <header class="container">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="project.html" style="color:#B89F80; font-size: 24px;padding-left:100px;">HappyFamily</a>
+                </div>
+
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="project.html" style="color:#B89F80;">Trang chủ </a>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false" style="color:#B89F80;">Đám cưới<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" style="color:#B89F80;">Đám cưới</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#" style="color:#B89F80;">Sinh nhật</a></li>
+                                <li role="separator" class="divider" style="color:#B89F80;"></li>
+                                <li><a href="#" style="color:#B89F80;">Thời trang/Ca nhạc </a></li>
+
+                            </ul>
+                        </li>
+                        </li>
+                        <li><a href="uudai.html" style="color:#B89F80;">Ưu đãi</a></li>
+                        <li><a href="thucdon.html" style="color:#B89F80;">Thực đơn</a></li>
+                        <li><a href="tintuc.html" style="color:#B89F80;">Tin tức</a></li>
+                        <li><a href="dattiec.html" style="color:#B89F80;">Đặt tiệc</a></li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+    <div style="width:100%;height:60px;">
+        <h2 style="text-align:center;color: #B89F80;">DỊCH VỤ ĐÁM CƯỚI</h2>
+        <section style="margin-top:70px;">
+
+            <div class="tab">
+
+                <button class="tablinks" onclick="openCity(event, 'Paris')" id="defaultOpen">Dịch vụ đám cưới</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Dịch vụ đám cưới tại nhà</button>
+            </div>
+            <div id="Paris" class="tabcontent">
+                <h3 style=" text-align:center; color: #B89F80;">Dịch vụ đám cưới</h3>
+                <section class="container" style="margin-top:100px;">
+
+                    <div class="posts">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="item">
+                                    <div class="thumbnail">
+                                        <img src="wedding10.jpg" alt="1" class="img-responsive">
+                                    </div>
+
+                                </div> 
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item">
+
+                                    <div class="document" style="padding-left: 15px;">
+
+                                        <p style="color:#626262">– Trong khoảng vài năm trở lại đây, những bạn trẻ đang
+                                            trong quá trình chuẩn bị đám cưới hẳn đã nghe qua cụm từ “Wedding Planner“.
+                                            Ban đầu là những tò mò lạ lẫm về một vài đám cưới sang trọng đẹp mắt với
+                                            chi phí tổ chức cao chót vót của các cặp đôi “đại gia” tại các khách sạn 5
+                                            sao, rồi dần dần thuật ngữ wedding planner đã trở nên thân thuộc và gần gũi
+                                            hơn với hầu hết mọi người muốn có một đám cưới khác biệt. Wedding Planner
+                                            (WP) đơn giản là một chuyên gia về trang trí và tổ chức trọn gói đám cưới,
+                                            và đến với họ các cô dâu chú rể (CD-CR) có thể hoàn toàn yên tâm tập trung
+                                            tận hưởng ngày cưới mà không phải bận tâm lo nghĩ quá nhiều.</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <section class="container">
+
+                        <div class="posts">
+                            <div class="decoration">
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <div class="document">
+
+                                            <p style="color:#626262">– Nhưng có phải tất cả mọi người khi sắp cưới đều
+                                                cần tìm đến WP không ? Và liệu những mong muốn của CD-CR có được đáp
+                                                ứng trọn vẹn ? Câu trả lời là điều đó hoàn toàn phụ thuộc vào mức độ
+                                                đòi hỏi cầu kỳ của CD-CR cũng như khả năng tài chính của họ. Bản thân
+                                                Phi Điệp Wedding Planner cũng thấy nếu bạn và bạn bè người thân có khả
+                                                năng cộng với một chút khéo tay và có hứng thú với việc tự trang trí
+                                                đám cưới của mình thì đều có thể tự làm hầu hết các phần việc mà không
+                                                cần thuê WP.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <div class="thumbnail">
+                                            <div class="thumbnail">
+                                                <img src="./wedding11.jpg" alt="banghedamcuoi" class="img-responsive">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="container" style="margin-top:100px;">
+
+                            <div class="posts">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="item">
+                                            <div class="thumbnail">
+                                                <img src="wedding12.jpg" alt="phongba" class="img-responsive">
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="item">
+
+                                            <div class="document" style="padding-left:10px;">
+
+
+                                                <p style="color:#626262">– Hoặc một cách tiết kiệm chi phí hơn là chúng
+                                                    ta có thể thuê thợ cắm hoa của các cửa hàng cắm hoa với thiết kế
+                                                    tham khảo và yêu cầu họ làm giống như thế, có thể sản phẩm sẽ không
+                                                    hoàn hảo được 100% nhưng chi phí bỏ ra chắc chắn sẽ giảm được tương
+                                                    đối nhiều. Khó khăn duy nhất là họ sẽ không có nhiều các loại phụ
+                                                    kiện chuyên dụng đi kèm nhưng nếu khéo xoay sở và dùng các thiết kế
+                                                    không quá cầu kỳ thì điều này hoàn toàn nằm trong khả năng.
+
+
+                                                </p>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                        <section class="container">
+
+                            <div class="posts">
+                                <div class="decoration">
+                                    <div class="col-md-6">
+                                        <div class="item">
+                                            <div class="document">
+
+                                                <p style="color:#626262">– Khi đã quyết định tìm đến Wedding Planner
+                                                    thì điều các bạn cần quan tâm là WP đó có phong cách thiết kế và
+                                                    trang trí phù hợp với sở thích của mình không, nên xem nhiều ảnh
+                                                    tham khảo các đám cưới họ đã làm để có thể mường tượng được những
+                                                    gì sẽ làm và đưa yêu cầu cho sát với thực tế. Chi phí cho phần
+                                                    trang trí đám cưới là một vấn đề nhạy cảm nhưng tốt nhất bạn nên
+                                                    cho WP biết khả năng chi trả của bạn để họ sẽ cho bạn những lời
+                                                    khuyên hợp lý với số tiền bạn định bỏ ra sẽ làm được những gì.Lưu ý
+                                                    là bỏ ra nhiều tiền không có nghĩa là bạn sẽ cảm thấy hài lòng hơn
+                                                    hay là sẽ có một đám cưới tuyệt vời hơn. Quan trọng là bạn cảm thấy
+                                                    vui và thực sự thấy mình nhận được những gì xứng đáng với số tiền
+                                                    bỏ ra.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="item">
+                                            <div class="thumbnail">
+                                                <div class="thumbnail">
+                                                    <img src="./wedding13.jpg" alt="conghoa" class="img-responsive">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="container" style="margin-top:100px;">
+
+                                <div class="posts">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="item">
+                                                <div class="thumbnail">
+                                                    <img src="./wedding14.jpg" alt="hoatrangtri" class="img-responsive">
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="item">
+                                                <div class="document">
+
+                                                    <p style="color:#626262">– Một lời khuyên của chúng tôi là nếu bạn
+                                                        không có nhiều chi phí, không nên rải chi phí ra cho tất cả các
+                                                        hạng mục nhưng không có gì là thực sự nổi bật, hãy tập trung
+                                                        vào một vài hạng mục quan trọng: bàn tiểu cảnh trang trí hoa,
+                                                        cổng hoa hoặc sân khấu chính cho thật đẹp, hiệu quả mang lại sẽ
+                                                        cao hơn nhiều. Hoặc có thể kết hợp giữa hoa giả và hoa tươi,
+                                                        các hạng mục có thể làm hoa giả là cổng hoa, trụ hoa còn các
+                                                        hạng mục như bàn tiểu cảnh hay bàn lễ tân thì nên làm hoa tươi.</p>
+                                                </div>
+                                              
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <section class="container">
+
+                                    <div class="posts">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="document">
+
+                                                    <p style="color:#626262">– Các CD-CR cũng nên lưu ý những hạng mục
+                                                        được bên nhà hàng khách sạn tặng kèm để đỡ chi phí trang trí
+                                                        tổng thể. Cuối cùng một phần rất quan trọng trong ngày cưới là
+                                                        phần trang trí tại nhà cho lễ ăn hỏi, lễ rước dâu; nếu bạn đã
+                                                        làm trang trí thật đẹp ở khách sạn thì cũng đừng tiếc tiền để
+                                                        thuê Wedding Planner trang trí phần nhà cửa cho đẹp mắt để đón
+                                                        gia đình nhà thông gia đến tổ chức lễ cưới cho đúng với truyền
+                                                        thống. Tại Phi Điệp Wedding chúng tôi có các gói báo giá trang
+                                                        trí wedding planner theo gói và cũng xây dựng các gói trang trí
+                                                        riêng theo sở thích cá nhân cho những cô dâu chú rể muốn có một
+                                                        đám cưới đặc biệt không giống bất cứ ai.</p>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="item">
+                                                    <div class="item">
+                                                        <div class="thumbnail">
+                                                            <img src="./wedding15.jpg" alt="anhoi"
+                                                                class="img-responsive">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <footer style="background-color:#cde6c7;width: 100%;">
+                                        <section class="container" style="padding-left:70px;">
+
+                                            <div class="posts">
+                                                <div class="section">
+                                                    <div class="col-md-4">
+                                                        <div class="item">
+
+                                                            <h3 style="color:#B89F80">Trung Tâm HappyFamily</h3></br>
+                                                            <p style="color:#B89F80">Địa chỉ: Xóm 9 - Xã Xuân
+                                                                TiếnTiến-Huyện Xuân Trường</p>
+                                                            <p style="color:#B89F80">Tỉnh Nam Định</p>
+
+                                                            </br>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="item">
+                                                            <div class="thumbnail">
+                                                                <h3 style="color:#B89F80">Liên hệ</h3>
+                                                                <p style="color:#B89F80">Hotline: 0387664262</p>
+                                                                <p style="color:#B89F80">Email:Huybui14022000@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="item">
+                                                            <div class="thumbnail">
+                                                                <h3 style="color:#B89F80">Kết nối với chúng tôi</h3>
+                                                                <a href="https://www.facebook.com/profile.php?id=100006194080235"><i
+                                                                        class="fab fa-facebook-square" style="font-size:50px"></i></a>
+                                                                <a href="https://www.youtube.com/channel/UCrBxg9GdkPsV3yopKfzJ_AQ?view_as=subscriber"
+                                                                    style="color:red;"> <i class="fab fa-youtube-square"
+                                                                        style="font-size:50px"></i></a>
+                                                                <a href="https://www.instagram.com/canhuy47/" style="color:purple;"><i
+                                                                        class="fab fa-instagram" style="font-size:50px"></i></a>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </section>
+
+                                    </footer>
+
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+            </div>
+        </section>
+
+
+        </section>
+
+    </div>
+
+    <div id="Tokyo" class="tabcontent" style="margin-top:100px;">
+        <h3 style=" text-align:center; color: #B89F80;">Dịch vụ đám cưới tại nhà</h3>
+        <div>
+            <p style="width:70%;margin:auto; padding-top:20px;padding-top: 40px; color: #626262">Việc trang trí
+                nhà ngày cưới gồm
+                khá nhiều đầu việc và các công đoạn khác nhau. Từ phần việc trang trí
+                bàn thờ gia tiên, không gian tổ chức tiệc, phông bạt đám cưới, cổng hoa cưới, phòng cô dâu,
+                phòng
+                tân
+                hôn…Những phần việc này nếu không được sắp xếp sẽ khiến các cặp đôi cũng như những người đứng
+                ra lo
+                lễ
+                cưới cho cô dâu chú rể sẽ rất mệt mỏi.</p>
+            <p style="width:70%;margin:auto; padding-top:20px;padding-top: 10px;color: #626262"> Ngày nay, dịch
+                vụ trang trí đám
+                cưới khá phát triển, quý khách hàng có thể thuê trọn gói các loại hình dịch vụ này để giảm
+                thiểu sự
+                lo lắng, các cô dâu chú rể cũng không rơi vào tình trạng stress trước lễ cưới.</p>
+            <p style="width:70%;margin:auto; padding-top:20px;padding-top: 10px;color: #626262"> Ngoài các gói
+                báo giá trang trí
+                đám cưới tại nhà ngày cưới theo gói ở trên, chúng tôi cũng cung cấp các báo giá chi tiết hạng
+                mục
+                trang trí tiệc cưới lẻ theo yêu cầu để khách hàng linh động hơn trong việc lựa chọn các gói
+                trang
+                trí tiệc cưới tại nhà riêng cho phù hợp với nhu cầu của từng gia đình. Với nhà trai thì thường
+                chỉ
+                cần trang trí nhà trong ngày cưới (đón dâu) còn nhà gái thì cả hai ngày ăn hỏi và ngày cưới đều
+                phải sử dụng gói trang trí tại nhà riêng, chỉ có khác biệt là ngày ăn hỏi có thêm dãy bàn để
+                mâm
+                tráp phía trước phông chính. Chi tiết các hạng mục báo giá trang trí đám cưới tại nhà đơn lẻ
+                như
+                sau:</p>
+
+        </div>
+        <section class="container" style="margin-top:100px;">
+
+            <div class="posts">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="item">
+                            <div class="thumbnail">
+                                <img src="nhabat.jpg" alt="nhabat" class="img-responsive">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="item">
+
+                            <div class="document" style="padding-left: 15px;">
+                                <h3 style="color:#B89F80">♥ Cho thuê nhà bạt đám cưới – dựng rạp cưới:</h3>
+                                <p style="color:#626262">– Nhà bạt thường 120k/1m2 (nhà diện tích 25m2 tính
+                                    tối thiểu bằng 3 triệu – chỉ phù hợp với gia đình dựng rạp để ăn cỗ
+                                    trong ngõ, hoặc không yêu cầu cao về thẩm mỹ)</p>
+                                – Nhà bạt cao cấp với nhiều phụ kiện hoa lá tự nhiên, đèn chùm, thảm cỏ …
+                                250k/1m2 (nhà diện tích 25m2 tính tối thiểu bằng 5 triệu)
+                                <p style="color:#626262">– Nhà bạt không gian gian trang trí vải lụa, hoa lụa,
+                                    phale cao cấp cho đám cưới ngoài trời: tùy theo yêu cầu chi tiết sẽ có báo
+                                    giá riêng</p>
+                                <a href="#" style="color:white;"> <button style="width:100px; height:30px;background-color:#B89F80;">
+                                        Xem thêm</button>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <section class="container">
+
+                <div class="posts">
+                    <div class="decoration">
+                        <div class="col-md-6">
+                            <div class="item">
+                                <div class="document">
+                                    <h3 style="color:#B89F80;"> ♥ Cho thuê bàn ghế cưới:</h3>
+                                    <p>– 01 bàn 6 ghế tựa áo ghế chằng chân (vải phủ theo tông mầu, ấm chén):
+                                        300k /1 bộ</p>
+                                    <p>– 01 bàn 6 ghế Chiavari:</p>
+                                    <p>500k /1 bộ đầy đủ bàn ghế ấm chén nhưng ghế để nguyên bản không trang
+                                        trí</p>
+                                    <p>600k/1 bộ đầy đủ có bọc áo ghế đuôi công, hoa văn ren mờ hoặc trang trí
+                                        hoa lụa </p>
+                                    <p>750k/1 bộ đầy đủ trang trí ghế với hoa lá tươi</p>
+                                    <a href="#" style="color:white;"> <button style="width:100px; height:30px;background-color:#B89F80;">
+                                            Xem thêm</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <div class="thumbnail">
+                                        <img src="./ban-ghe-cuoi-hoi-mau-do-800x400.jpg" alt="banghedamcuoi" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="container" style="margin-top:100px;">
+
+                    <div class="posts">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="item">
+                                    <div class="thumbnail">
+                                        <img src="phongbat.jpg" alt="phongba" class="img-responsive">
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item">
+
+                                    <div class="document" style="padding-left:10px;">
+                                        <h3 style="color:#B89F80;">♥ Phông cưới đẹp các chất liệu in bạt, lụa
+                                            trắng kết hợp hoa giấy:
+                                        </h3>
+                                        <p>– Phông cưới in bạt căng khung inox: 180k/1m2</p>
+                                        <p>– Phông cưới vải lụa hoa lụa theo thiết kế cơ bản : 3 triệu/1 bộ
+
+                                        </p>
+                                        <p>– Phông cưới hoa lụa với thiết kế đặc biệt 4-5 triệu
+
+                                        </p>
+                                        <p>– Phông cưới vải lụa kết hợp hoa tươi : từ 15 triệu trở lên.
+
+                                        </p>
+
+                                        <a href="#" style="color:white;"> <button style="width:100px; height:30px;background-color:#B89F80;">
+                                                Xem thêm</button>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section class="container">
+
+                    <div class="posts">
+                        <div class="decoration">
+                            <div class="col-md-6">
+                                <div class="item">
+                                    <div class="document">
+                                        <h3 style="color:#B89F80"> ♥ Cổng hoa:</h3>
+                                        <p style="color:#626262">– Cổng hoa lụa vòng cung cơ bản: 2.5
+                                            triệu/1 bộ</p>
+                                        <p style="color:#626262">– Cổng hoa tươi theo thiết kế từ 10 triệu
+                                            trở lên</p>
+                                        <p style="color:#626262">– Cổng hoa tươi theo thiết kế từ 10 triệu
+                                            trở lên</p>
+                                    </div>
+                                    <a href="#" style="color:white;"> <button style="width:100px; height:30px;background-color:#B89F80;">
+                                            Xem thêm</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item">
+                                    <div class="thumbnail">
+                                        <div class="thumbnail">
+                                            <img src="./rapdamcuoi.jpg" alt="conghoa" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="container" style="margin-top:100px;">
+
+                        <div class="posts">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <div class="thumbnail">
+                                            <img src="./hoatrangtri.jpg" alt="hoatrangtri" class="img-responsive">
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="item">
+                                        <div class="document">
+                                            <h3 style="color:#B89F80"> ♥ Hoa tươi trang trí:</h3>
+                                            <p style="color:#626262">– Hoa tươi bàn nước: 300k trở lên tùy mẫu
+                                                thiết kế</p>
+                                            <p style="color:#626262">– Hoa tươi trang trí cầu thang cơ bản:
+                                                300k một nhịp kết hợp ruy băng, thiết kế riêng sẽ có báo giá cụ
+                                                thể</p>
+                                            <p style="color:#626262">– Trang trí hoa phòng tân hôn: 3 – 5 – 8
+                                                triệu tùy theo thiết kế, nếu làm theo yêu cầu sẽ có báo giá cụ
+                                                thể</p>
+                                        </div>
+                                        <a href="#" style="color:white;"> <button style="width:100px; height:30px;background-color:#B89F80;">
+                                                Xem thêm</button>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <section class="container">
+
+                            <div class="posts">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="document">
+                                            <h3 style="color:#B89F80">♥ Các hạng mục trang trí khác:</h3>
+                                            <p style="color:#626262">– Đèn Led đánh vào phông và nhà
+                                                bạt, cổng hoa: 300k/1 cái</p>
+                                            <p style="color:#626262">– Hệ khung vải lụa trắng phủ che
+                                                tường, bếp: 300k/1m dài</p>
+                                            <p style="color:#626262">– Gói loa đài mic đầu hát karaoke:
+                                                3 triệu một ngày không bao gồm người điều khiển chọn
+                                                nhạc.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="item">
+                                            <div class="item">
+                                                <div class="thumbnail">
+                                                    <img src="./phong-tuc-cuoi-hoi-o-mien-bac-3.jpg" alt="anhoi" class="img-responsive">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <footer style="background-color:#cde6c7">
+                                <section class="container" style="padding-left:70px;">
+
+                                    <div class="posts">
+                                        <div class="section">
+                                            <div class="col-md-4">
+                                                <div class="item">
+
+                                                    <h3 style="color:#B89F80">Trung Tâm HappyFamily</h3></br>
+                                                    <p style="color:#B89F80">Địa chỉ: Xóm 9 - Xã Xuân TiếnTiến-Huyện
+                                                        Xuân Trường</p>
+                                                    <p style="color:#B89F80">Tỉnh Nam Định</p>
+
+                                                    </br>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="item">
+                                                    <div class="thumbnail">
+                                                        <h3 style="color:#B89F80">Liên hệ</h3>
+                                                        <p style="color:#B89F80">Hotline: 0387664262</p>
+                                                        <p style="color:#B89F80">Email:Huybui14022000@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="item">
+                                                    <div class="thumbnail">
+                                                        <h3 style="color:#B89F80">Kết nối với chúng tôi</h3>
+                                                        <a href="https://www.facebook.com/profile.php?id=100006194080235"><i
+                                                                class="fab fa-facebook-square" style="font-size:50px"></i></a>
+                                                        <a href="https://www.youtube.com/channel/UCrBxg9GdkPsV3yopKfzJ_AQ?view_as=subscriber"
+                                                            style="color:red;"> <i class="fab fa-youtube-square" style="font-size:50px"></i></a>
+                                                        <a href="https://www.instagram.com/canhuy47/" style="color:purple;"><i
+                                                                class="fab fa-instagram" style="font-size:50px"></i></a>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </section>
+
+                            </footer>
+
+                        </section>
+                    </section>
+                </section>
+            </section>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
