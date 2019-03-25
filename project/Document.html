@@ -1,369 +1,157 @@
 <!DOCTYPE html>
-<!-- saved from url=(0062)file:///Users/huybui/workspace/learn-node/project/project.html -->
+<!-- saved from url=(0062)file:///Users/huybui/workspace/learn-node/project/menufix.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./Document_files/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="./Document_files/css" rel="stylesheet">
-    <link rel="stylesheet" href="./Document_files/bootstrap.min(1).css">
-    <link rel="stylesheet" href="./Document_files/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-
     <script src="./Document_files/jquery.min.js"></script>
-    <script src="./Document_files/bootstrap.min.js"></script>
     <title>Document</title>
 <style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
 
-    .collapse{
-  float: right; 
-  
-}
-body{
-    background-image: url("img_parallax.jpg");
-    background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.container{
-    width: 100%;
-    
-}
+    .navbar {
+        position: fixed;
+        height: 80px;
+        overflow: hidden;
+        top: 0;
+        display: flex;
+        align-items: center;
+        background: #f1f1f1;
+        width: 100%;
+    }
 
-.thumbnail{
-    border: none;
-    background-color: transparent;
-}
-section,.container{
-    width: 100%;
-    padding: 0;
-    margin-top: 0
-    
-}
-.carousel{
-    margin-top: -20px;
-}
-.navbar-default{
-       
-    position: relative;
-   z-index: 1;
-}
-.demo{
-    width: 100%;
-    height: 300px;
- 
-    padding-top: 20px;
-}
-.demo h3{
-    text-align: center;
-}
-.demo p {
-    text-align: center;
-}
-.dropdown-menu{
-    background-image: url('background-menu.jpg')
-}
-.row{
-    background-image: url('front_slider_2.jpg')
-}
-.thumbnail img{
-padding-top: 15px;
-}
-.row{
-    margin: auto;
-}
+    .menu {
+        position: absolute;
+        right: 20px;
 
-.one1{
-    text-align: center;
-}
-.section{
-    width:100%;
-    height:auto;
+    }
 
-    padding-top: 30px;
-}
-.footer{
-    width: 100%;height: 400px;
-    border: 1px solid gray;
-}
-.navbar-brand{
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
-font-family: 'Libre Baskerville', serif;
-font-family: 'Abril Fatface', cursive;
-}
-.footer .adress{
-    overflow: hidden;
-   float: left;
-   width: 30%;
-   padding-left: 100px;
-   
-}
-input:hover{
-    background-color: blue;
-}
+    .menu a {
+        color: #333;
+        text-decoration: none;
+        margin-left: 20px;
+        transition: color 0.3s;
+        text-transform: uppercase
+    }
+
+    .header {
+        margin-top: 100px;
+    }
+
+    .menu a:hover {
+        color: aquamarine;
+    }
+
+    .btn span {
+        display: block;
+        margin: 6px;
+width: 40px;
+height: 3px;
+background: #333;
+    }
+    .btn{
+        display: none;
+        position: absolute;
+        right: 20px;
+    }
 </style></head>
 
 
 <body>
-    <header class="container">
+    <div class="navbar">
 
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="file:///Users/huybui/workspace/learn-node/project/project.html#" style="color:#B89F80; font-size: 24px;">HappyFamily</a>
-                </div>
-
-
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="file:///Users/huybui/workspace/learn-node/project/project.html" style="color:#B89F80;">Trang chủ </a>
-                        </li><li class="dropdown">
-                            <a href="file:///Users/huybui/workspace/learn-node/project/project.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#B89F80;">Đám cưới<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="file:///Users/huybui/workspace/learn-node/project/project.html#" style="color:#B89F80;">Đám cưới</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="file:///Users/huybui/workspace/learn-node/project/project.html#" style="color:#B89F80;">Sinh nhật</a></li>
-                                <li role="separator" class="divider" style="color:#B89F80;"></li>
-                                <li><a href="file:///Users/huybui/workspace/learn-node/project/project.html#" style="color:#B89F80;">Thời trang </a></li>
-
-                            </ul>
-                        </li>
-                        
-                        <li><a href="file:///Users/huybui/workspace/learn-node/project/project.html#" style="color:#B89F80;">Ưu đãi</a></li>
-                        <li><a href="file:///Users/huybui/workspace/learn-node/project/project.html#" style="color:#B89F80;">Thực đơn</a></li>
-                        <li><a href="file:///Users/huybui/workspace/learn-node/project/project.html#" style="color:#B89F80;">Tin tức</a></li>
-                        <li><a href="file:///Users/huybui/workspace/learn-node/project/project.html#" style="color:#B89F80;">Đặt tiệc</a></li>
-
-                    </ul>
+        <div class="logo">HappyFamily</div>
+        <a class="btn" href="file:///Users/huybui/workspace/learn-node/project/menufix.html">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="menu">
+            <a href="file:///Users/huybui/workspace/learn-node/project/menufix.html">Home</a>
+            <a href="file:///Users/huybui/workspace/learn-node/project/menufix.html">About</a>
+            <a href="file:///Users/huybui/workspace/learn-node/project/menufix.html">Works</a>
+            <a href="file:///Users/huybui/workspace/learn-node/project/menufix.html">Contact</a>
 
 
-                </div>
-            </div>
-
-        </nav>
-
-    </header>
-    <section>
-        <div class="container">
-
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-                    <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-                </ol>
-
-
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="file:///Users/huybui/workspace/learn-node/project/slice2.jpg" alt="Los Angeles" style="width:100%;">
-                    </div>
-
-                    <div class="item">
-                        <img src="file:///Users/huybui/workspace/learn-node/project/slice1.jpg" alt="Chicago" style="width:100%;">
-                    </div>
-
-                    <div class="item">
-                        <img src="file:///Users/huybui/workspace/learn-node/project/slice3.jpg" alt="New york" style="width:100%;">
-                    </div>
-                </div>
-
-
-                <a class="left carousel-control" href="file:///Users/huybui/workspace/learn-node/project/project.html#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="file:///Users/huybui/workspace/learn-node/project/project.html#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </section>
-    <div class="demo">
-        <h3 style="color:#B89F80;">Giới thiệu chung về chúng tôi</h3>
-        <p>Chúng tôitôi là một Cty THNN Chuyên cung cấp về dịch vụ đặt tiệc đám cưới, sinh nhật,thời trang,âm nhạc. Đáp
-            ứng mọi yêu cầu của quý vị,</p>
-        <p>với nhưng nơi đặt tiệc sự kiện lớn.</p>
-        <p>Với cơ sở đầu tiên thành lập năm 2009, tới nay, Cty chúng tôi ghi dấu với 10 trung tâm tổ chức sự kiện, tiệc
-            cưới tọa lạc tại những vị trí đắc địa trong trung tâm thành phố.
-        </p>
-        <p>Đảm bảo phục vụ quý vị với đầy đủ ghế ngồi, ánh sáng tốt , âm thanh chất lượng tốt nhất từ trước tới nay.</p>
-    </div>
-    <section class="container">
-
-        <div class="posts">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="item">
-                        <div class="thumbnail">
-                            <img src="file:///Users/huybui/workspace/learn-node/project/wedding.jpg" alt="wedding" class="img-responsive">
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="col-md-6">
-                    <div class="item">
-                        <div class="thumbnail" style="padding-left:40px;">
-
-                            <div class="document">
-                                <h3 style="color:white;">DỊCH VỤ ĐÁM CƯỚI</h3>
-                                <p style="color:white">Chúng tôi biết hiện nay có rất nhiều các bạn trẻ đang tìm nơi tổ chức đám cưới cho
-                                    mình.</p>
-                                <p style="color:white">Vậy thì các bạn hãy đến với chúng tôi, chúng tôi chính là những người các bạn cần để
-                                    tạo lên hạnh phúc,</p>
-                                <p style="color:white">tạo lên những tiếng cười, đem đến cho các bạn một tương lai.</p>
-                            </div>
-                            <button style="width:100px; height:30px;background-color:yellow;"><a href="file:///Users/huybui/workspace/learn-node/project/project.html#">Xem thêm</a></button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section class="container">
-
-        <div class="posts">
-            <div class="decoration">
-                <div class="col-md-6">
-                    <div class="item">
-                        <div class="document" style="padding-left:40px;">
-                            <h3 style="color:#B89F80;">DỊCH VỤ SINH NHẬT</h3>
-                            <p>Bất kì trong mỗi chúng ai cũng biết đến ngày sinh của mình,nhưng một đối với nhiều người
-                                dù biết,</p>
-                            <p>nhưng cũng chẳng thể nào tổ chức được vì hoản cảnh khó khăn , do không có thời gian tổ
-                                chức ngay tại nhà.</p>
-                            <p>Chúng tôi luôn là người sẵn sàng giúp đỡ bạn về những việc đó hãy đến với chúng tôi .</p>
-                            <button style="width:100px; height:30px;background-color:yellow;">Xem thêm</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="item">
-                        <div class="thumbnail">
-                            <div class="thumbnail">
-                                <img src="file:///Users/huybui/workspace/learn-node/project/birthday.jpg" alt="birthday" class="img-responsive">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="one" style="height:400px;width:100%; background-image:url(&#39;lacinzia-wedding.jpg&#39;)">
-        <div class="one1">
-            <img src="file:///Users/huybui/workspace/learn-node/project/Screen%20Shot%202019-03-09%20at%2010.33.30%20PM.png" alt="wedding" class="img-responsive" style="margin:auto;height: 400px;">
         </div>
     </div>
-    <section class="container">
-
-        <div class="posts">
-            <div class="section">
-                <div class="col-md-6">
-                    <div class="item" style="padding-left:100px;">
-                        <h3 style="color:#B89F80">Đăng ký đặt tiệc</h3>
-                        <form action="file:///Users/huybui/workspace/learn-node/project/project.html">
-                            <input type="text" name="name" id="name" placeholder="Họ và tên" style="width: 40%; padding-left: 10px;"><br>
-                            <br>
-                            <input type="text" name="name" id="name" placeholder="Số điện thoại" style="width: 40%; padding-left: 10px;">
-                            <br>
-                            <br>
-                            <select name="year" id="year" style="height:27px;width:40%;;">
-                                <option>Hình thức đặt tiệc</option>
-                                <option value="Đám cưới">Đám cưới</option>
-                                <option value="Sinh nhật">Sinh nhật</option>
-                                <option value="Thời trang">Thời trang</option>
-                                
-                            </select>
-                        </form>
-
-                    </div>
-
-
-                </div>
-                <div class="col-md-6">
-                    <div class="item">
-                        <div class="thumbnail" style="padding-left:40px;">
-
-                            <div class="document-2" style="padding-left:60px;">
-                                <input type="text" name="gmail" id="gmail" placeholder="Gmail" style="width: 40%;padding-left: 10px;"><br>
-                                <br>
-                                <input type="text" name="noidung" id="noidung" placeholder="Nội dung muốn nói" style="width: 60%;height:100px; padding-left: 10px;top:-100px;" class="img-responsive"><br>
-                                <br>
-                            </div>
-                            <input type="submit" value="Đăng kí" id="mid" style="background-color:#B89F80;margin-left:60px;;color: white;">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <footer style="background-color:#cde6c7">
-        <section class="container" style="padding-left:70px;">
-
-            <div class="posts">
-                <div class="section">
-                    <div class="col-md-4">
-                        <div class="item">
-
-                            <h3 style="color:#B89F80">Trung Tâm HappyFamily</h3><br>
-                            <p style="color:#B89F80">Địa chỉ: Xóm 9 - Xã Xuân TiếnTiến-Huyện Xuân Trường</p>
-                            <p style="color:#B89F80">Tỉnh Nam Định</p>
-                           
-                            <br>
-                        </div>
-
-
-                    </div>
-                    <div class="col-md-4">
-                        <div class="item">
-                            <div class="thumbnail">
-                                <h3 style="color:#B89F80">Liên hệ</h3>
-                                <p style="color:#B89F80">Hotline: 0387664262</p>
-                                <p style="color:#B89F80">Email:Huybui14022000@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="item">
-                            <div class="thumbnail">
-                                <h3 style="color:#B89F80">Kết nối với chúng tôi</h3>
-                                <a href="https://www.facebook.com/profile.php?id=100006194080235"><i class="fab fa-facebook-square" style="font-size:50px"></i></a>
-                                <a href="https://www.youtube.com/channel/UCrBxg9GdkPsV3yopKfzJ_AQ?view_as=subscriber" style="color:red;"> <i class="fab fa-youtube-square" style="font-size:50px"></i></a>
-                                <a href="https://www.instagram.com/canhuy47/" style="color:purple;"><i class="fab fa-instagram" style="font-size:50px"></i></a>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-    </footer>
-
-    <script src="./Document_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="./Document_files/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="./Document_files/bootstrap.min(2).js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
+    <div class="header">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+            of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+            of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+            of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+            of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+            of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+            of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+            of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+            of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+            of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+            of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+            of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+            of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
 
 
 </body></html>
