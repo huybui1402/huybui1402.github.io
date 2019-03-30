@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Libre+Baskerville|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="uudai.html">
+    <link rel="stylesheet" href="tintuc.html">
+    <link rel="stylesheet" href="dattiec.html">
+    <link rel="stylesheet" href="thucdon.html">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .thumbnail{
+    border: none;
+    background-color: transparent;
+}
+.navbar-brand{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Abril Fatface', cursive;
+}
+.container{
+    width: 100%;
+    
+}
+.collapse{
+  float: right; 
+  
+}
+.container{
+    width: 100%;
+    padding: 0;
+    margin-top: 0
+    
+}
+.collapse{
+  float: right; 
+  
+}
+#background{
+  /* The image used */
+  background-image: url("./damcuoi006.jpg");
+
+  /* Set a specific height */
+  min-height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+opacity: 0.9;
+}
+ul li:hover {
+    background-color: #212020a1;
+    color: white;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+body{
+  margin: 0;
+  padding: 0;
+
+}
+
+.navbar{
+  position: fixed;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  width: 100%;
+}
+.logo{
+ 
+  background-size: contain;
+  width: 180px;
+  height: 18px;
+  float: left;
+  margin-left:20px;
+
+  text-decoration: none;
+}
+
+.menu{
+  position: absolute;
+  right: 20px;
+}
+.menu a{
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 20px;
+  transition: color 0.3s;
+  text-transform: uppercase;
+ 
+}
+.menu a:hover{
+  color: #6ab04c;
+}
+.header{
+  width: 100%;
+  height: 600px;
+ 
+  background-size: cover;
+  margin-top: 80px;
+}
+.btn{
+  display: none;
+  position: absolute;
+  right: 20px;
+}
+.btn:hover > span{
+  background: #6ab04c;
+}
+.btn span{
+  display: block;
+  margin: 6px;
+  width: 40px;
+  height: 3px;
+  background: #333;
+}
+
+@media only screen and (max-width : 1010px) {
+  .navbar{
+    overflow: visible;
+  }
+  .menu{
+    width: 100%;
+    right: 0;
+    top: 78px;
+    background: #f1f1f1;
+    overflow: hidden;
+    max-height: 0;
+  }
+  .menu a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+  .btn{
+    display: block;
+    cursor: pointer;
+  }
+  .show{
+    max-height: 500px;
+  }
+}
+.main{
+    
+}
+.content{
+ 
+    padding: 2em 4em;
+    margin-bottom: 2em;
+}
+.sidebar{
+  
+    font-size: 95%;
+ 
+}
+@media screen and (min-width:600px){
+    .main::before, main::after{
+        content: "";
+        display: table;
+        clear: both
+    }
+    .main{
+        max-width:93%;
+    }
+    .content{
+        width: 73%;
+        float: left;
+        margin-right: 1.5%;
+    }
+    .sidebar{
+        width: 25%;
+        float: left;
+    }
+}
+@media screen and(min-width:1024px){
+    .container{
+        max-width: 1280px;
+        margin: auto;
+    }
+}
+.image {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+        background: #212121;
+       margin-top: -60px;
+
+    }
+
+    .box {
+        width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 15px;
+        margin: 0 auto;
+    }
+
+    .card {
+        position: relative;
+        width: 300px;
+        height: 350px;
+        background: #fff;
+        margin: 0 auto;
+        border-radius: 4px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, .2)
+    }
+
+    .card::before,
+    .card::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 1;
+
+    }
+
+    .card:hover::before {
+        transform: rotate(20deg);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, .2)
+    }
+    .card:hover:after{
+        transform: rotate(10deg);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, .2)
+    }
+    .card .imgBx{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
+        background: #222;
+        transition: 0.5s;
+       z-index: 100;
+    }
+    .card:hover .imgBx{
+   bottom: 80px;
+    }
+    .card .imgBx img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card .details{
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        height: 60px;
+    text-align: center;
+    z-index: 10
+    }
+    .card .details h2{
+        margin: 0;
+        padding: 0;
+        font-weight: 600;
+        font-size: 20px;
+        color:#777;
+        text-transform: uppercase;
+    }
+   .card .details h2 span{
+       font-weight: 500px;
+       font-size: 16px;
+       color: #f38695;
+       display: block;
+   }
+</style>
+
+<body>
+    <header class="container">
+
+        <div class="navbar" style="z-index:1000;">
+            <div class="logo">
+                <p><a style=" text-transform: uppercase;font-size: 22px;color:#B89F80;    font-family: 'ZCOOL QingKe HuangYou', cursive;
+                            font-family: 'Libre Baskerville', serif;
+                            font-family: 'Abril Fatface', cursive;"
+                        href="project.html">HappyFamily</a></p>
+            </div>
+            <a class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="menu">
+                <a href="project.html" style="color:#B89F80; background-color: transparent;">Trang chủ</a>
+                <a href="damcuoi.html" style="color:#B89F80;">Đám cưới</a>
+                <a href="birthday.html" style="color:#B89F80;">Sinh nhật</a>
+                <a href="canhacthoitrang.html" style="color:#B89F80;">Thời trang/Ca nhạc</a>
+                <a href="uudai.html" style="color:#B89F80;">Ưu đãi</a>
+                <a href="thucdon.html" style="color:#B89F80;">Thực đơn</a>
+                <a href="tintuc.html" style="color:#B89F80;">Tin tức</a>
+                <a href="dattiec.html" style="color:#B89F80;">Đặt tiệc</a>
+
+            </div>
+
+    </header>
+    <section>
+        <div class="big" style="width:100%;height:300px;;margin-top: 40px;background-image: url('canhacthoitrang02.jpg')">
+            <div class="one4" style="text-align: center;width:100%;height:cover;color: white;padding-top: 120px;">
+                <h2 style="font-size: 33px;color: white; text-shadow: 2px 2px 4px #000000;">CA NHẠC - THỜI TRANG</h2>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="container" style="margin-top:100px;">
+        <div class="main">
+            <div class="content">
+                <img src="./canhacthoitrang05.png" alt="weddingbeautiful" class="img-responsive">
+                <di5>
+                    <h3 style="margin-left:33px;color:#B89F80; ;margin-top: 30px;">TRUNG TÂM TỔ CHỨC SỰ KIỆN HÀ NỘI -
+                        SANG TRỌNG THANH
+                        LỊCH</h3>
+                    <p style="margin-left:40px;width:80%;color: #626262;;margin-top: 30px;"> LIVESTREAM đang là XU
+                        HƯỚNG của thế giới. Việc truyền tải thông tin và tương tác trực tiếp với hàng nghìn, hàng triệu
+                        người trên toàn thế giới trên nền tảng nội dung video của Youtube và Facebook đang trở thành xu
+                        hướng mới trong toàn bộ các ngành truyền thông – kinh doanh – nội dung – sự kiện.</p>
+                    <div style="width:80%;margin-left: 40px;">
+                        <img src="./canhacthoitrang04.jpg" alt="weddingbeautiful6" class="img-responsive">
+
+                        <p style="color:#626262;margin-top: 30px;">Sự bùng nổ của kỉ nguyên công nghệ số đã tạo nên một
+                            thời kì vàng son cho các ứng dụng trên Social media phát triển mạnh mẽ. Không quá khó khăn
+                            để nhận ra sức mạnh và tầm ảnh hưởng rộng lớn của các công cụ giúp gia tăng khả năng tương
+                            tác người dùng… Và Live stream như đã tạo nên một cơn sốt trào lưu thật sự cho cả thế giới.</p>
+
+                        <div>
+                            <img src="./canhacthoitrang07.jpg" alt="adu1" class="img-responsive">
+                            <p style="color:#626262;margin-top: 30px;">Những hình ảnh được phát trực tiếp bao giờ cũng
+                                đem lại cảm xúc cho người xem. Với mong muốn đem lại dịch vụ tiện ích này cho mọi
+                                người. Sài Gòn HD triển khai dịch vụ live stream cho các sự kiện, hội thảo, liveshows,
+                                lễ cưới, tiệc sinh nhật…</p>
+
+                            <img src="./canhacthoitrang08.jpg" alt="adu2" class="img-responsive">
+
+                            <h2 style="color:#008080">BẢNG GIÁ QUAY PHIM LIVESTREAM GIÁ RẺ</h2>
+                            <h3 style="margin-left:33px;color:#B89F80; ;margin-top: 30px;">GÓI CƠ BẢN :</h3>
+                            <p style="margin-left:40px;width:80%;color: #626262;;margin-top: 30px;">🎥 #LiveStream 1
+                                camera 1
+                                góc máy</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 1 Camera 4K + 1 quay phim chuyên
+                                nghiệp</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 1 hệ thống Live Stream Pro</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 1 đường truyền 4G chuyên dụng trong
+                                nghành</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– Chi phí 2.500k ( gói này ko tặng
+                                chụp hình
+                                )</p>
+
+
+
+                            <h3 style="margin-left:33px;color:#B89F80; ;margin-top: 30px;">GÓI CHUYÊN NGHIỆP 1 </h3>
+                            <p style="margin-left:40px;width:80%;color: #626262;;margin-top: 30px;"> 🎥 #LiveStream 2
+                                camera 2
+                                góc máy</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 2 camera 4K + chân máy quay</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 2 thợ quay phim</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 1 hệ thống livestream</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 1 kỹ thuật viên</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 1 đường truyền 4G</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 1 hệ thống trộn hình</p>
+
+
+                            <h3 style="margin-left:33px;color:#B89F80; ;margin-top: 30px;">GÓI CHUYÊN NGHIỆP 2</h3>
+                            <p style="margin-left:40px;width:80%;color: #626262;;margin-top: 30px;"> 🎥 #LiveStream 2
+                                camera 2🎥 #LiveStream 3 camera 3 góc máy</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 3 camera 4K + chân máy quay</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 3 thợ quay phim</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 1 hệ thống livestream</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 1 kỹ thuật viên</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 1 kỹ thuật viên</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 1 đường truyền 4G</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– Chi phí 7tr chưa bao gồm VAT</p>
+
+
+
+                            <h3 style="margin-left:33px;color:#B89F80; ;margin-top: 30px;">GÓI CHUYÊN NGHIỆP 3</h3>
+                            <p style="margin-left:40px;width:80%;color: #626262;;margin-top: 30px;"> 🎥 #LiveStream 4
+                                camera 4 góc máy</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 4 camera 4K + chân máy quay</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 4 thợ quay phim</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 1 hệ thống livestream </p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 1 hệ thống trộn hình</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 1 kỹ thuật viên</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– 1 đường truyền 4G</p>
+                            <p style="margin-left:40px;width:80%;color: #626262;">– Chi phí 11tr chưa bao gồm VAT</p>
+
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h2 style="color:#B89F80">Bài viết mới nhất</h2>
+            <p style="color:#626262">Chúng tôi cung cấp cho bạn các thông tin, xu hướng mới nhất về lĩnh vực sự
+                kiện/tiệc cưới.</p>
+            <div style="margin-top:70px;">
+                <h3> Bữa tiệc sinh nhật trong mơ</h3>
+                <img src="./sinhnhat8.jpg" alt="sinhnhat" class="img-responsive">
+            </div>
+            <div style="margin-top:10px;width:100%;height:cover;border:1px solid #B89F80;;"></div>
+            <div style="margin-top:70px;">
+                <h3> Bữa tiệc sinh nhật trong mơ</h3>
+                <img src="./sinhnhat8.jpg" alt="sinhnhat" class="img-responsive">
+            </div>
+            <div style="margin-top:10px;width:100%;height:cover;border:1px solid #B89F80;;"></div>
+        </div>
+
+
+        </div>
+    </section>
+
+    <div style="background-color:#212121">
+<h2 style="color:white;text-align:center;position: relative;padding-top: 50px;" >ẢNH XEM THÊM</h2>
+        <section class="image">
+
+            <div class="box">
+
+                <div class="card">
+
+                    <div class="imgBx">
+                        <img src="./image1.jpg" alt="image1">
+                    </div>
+                    <div class="details">
+                        <h2>Someone Famous <br><span>Founder</span></h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./image2.jpg" alt="image2">
+                    </div>
+                    <div class="details">
+                        <h2>Someone Famous <br><span>Founder</span></h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./image3.jpg" alt="image3">
+                    </div>
+                    <div class="details">
+                        <h2>Someone Famous <br><span>Founder</span></h2>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <section class="container"  id="background">
+
+        <div class="posts">
+            <div class="section">
+                <form action="luudangky.html" id="myform">
+                    <div class="col-md-6">
+                        <div class="item" style="padding-left:60px;padding-top: 40px;">
+                            <h3 style="color:white;">Đăng ký đặt tiệc</h3>
+
+                            <input type="text" name="name" id="name" placeholder="Họ và tên" style="width: 75%; padding-left: 10px;height: 40px;border-radius: 5px;">
+                            <span class="error" style="color:red;"></span> </br>
+                            </br>
+                            <input type="text" name="Telephone" id="Telephone" placeholder="Số điện thoại" style="width: 75%;padding-left: 10px;;height: 40px;border-radius: 5px;" />
+                            <span class="error" style="color:red;"></span> </br>
+                            </br>
+                            <input type="email" name="email" id="email" placeholder="Gmail" style="width: 75%;padding-left: 10px;;height: 40px;border-radius: 5px;" />
+                            <span class="error" style="color:red;"></span> </br>
+                            </br>
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="item">
+
+
+                            <div class="thumbnail" style="padding-left:60px;padding-top: 45px;">
+
+                                <div class="document-2" style="padding-top: 50px;">
+                                    <select name="Hinhthuc" id="year" style="height:27px;width:70%;background-color:white;height: 40px;;;">
+                                        <option value="">Hình thức đặt tiệc</option>
+                                        <option value="Đám cưới">Đám cưới</option>
+                                        <option value="Sinh nhật">Sinh nhật</option>
+                                        <option value="Thời trang">Thời trang</option>
+                                        </br>
+                                    </select> <span class="error"></span> </br>
+
+                                    </br>
+                                    <input type="text" name="noidung" id="noidung" placeholder="Nội dung muốn nói"
+                                        style="width: 70%;height:100px; padding-left: 10px;top:-100px;border-radius: 5px;" class="img-responsive">
+                                    <span class="error" style="color:red;"></span> </br>
+                                    </br>
+                                    <input type="submit" value="Đăng kí" id="mid" style="background-color:#c57a1e;color:white;" />
+                                </div>
+                                
+                            </div>
+
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <footer style="background-color:#080808e8">
+        <section class="container" style="padding-left:70px;">
+
+            <div class="posts">
+                <div class="section">
+                    <div class="col-md-4">
+                        <div class="item">
+
+                            <h3 style="color:white">Trung Tâm HappyFamily</h3></br>
+                            <b style="font-size:18px;color:white">Địa chỉ:</b> <span style="color:white">Xóm 9 - Xã
+                                Xuân TiếnTiến-Huyện Xuân Trường</span>
+
+                            <p style="color:white">Tỉnh Nam Định</p>
+
+                            </br>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="thumbnail">
+                                <h3 style="color:white">Liên hệ</h3>
+                                <b style="font-size:18px;color:white">Hotline:</b> <span style="color:white">0387664262</span>
+                                </br>
+                                <b style="font-size:18px;color:white">Email:</b> <span style="color:white">Huybui14022000@gmail.com</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item">
+                            <div class="thumbnail">
+                                <h3 style="color:white">Kết nối với chúng tôi</h3>
+                                <a href="https://www.facebook.com/profile.php?id=100006194080235"><i class="fab fa-facebook-square"
+                                        style="font-size:50px"></i></a>
+                                <a href="https://www.youtube.com/channel/UCrBxg9GdkPsV3yopKfzJ_AQ?view_as=subscriber"
+                                    style="color:red;"> <i class="fab fa-youtube-square" style="font-size:50px"></i></a>
+                                <a href="https://www.instagram.com/canhuy47/" style="color:purple;"><i class="fab fa-instagram"
+                                        style="font-size:50px"></i></a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </footer>
+    <script>
+        $('#myform').on('submit', function () {
+            var isValid = true
+            if ($('#name').val().trim() == '') {
+                $('#name').next('span').text('Name is empty');
+                isValid = false;
+            }
+            else {
+                $('#name').next('span').text('');
+            }
+            if ($('#email').val().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/) == null) {
+                $('#email').next('span').text('Email is invalid');
+                isValid = false
+            } else {
+                $('#email').next('span').text('');
+            }
+
+            if ($('#Telephone').val().trim() == '') {
+                $('#Telephone').next('span').text('Telephone is empty');
+                isValid = false;
+            }
+            else {
+                $('#Telephone').next('span').text('');
+            }
+
+
+
+            return isValid;
+
+        })
+    </script>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+
+        }
+    </script>
+    <script type="text/javascript">
+
+        $(".btn").on("click", function () {
+            $('.menu').toggleClass("show");
+        });
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

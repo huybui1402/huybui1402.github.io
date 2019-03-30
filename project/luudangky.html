@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+main .wrap_3 {
+    margin: auto;
+   
+    width: 396px;
+    background-color: white;
+    text-align: center;
+}
+
+main .left_2 {
+    width: 50%;
+    text-align: right;
+    float: left;
+}
+
+main .right_2 {
+    width: 50%;
+    float: right;
+    text-align: left;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+<body onload="show()">
+    <header>
+        <div class="main clearfix">
+            <div class="logo">
+                <i class="background"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrap_2">
+            <div class="wrap_3 clearfix">
+                <p style="font-size: 24px">Đăng ký thành công</p>
+                <div class="left_2">
+                    <p>Họ và tên&nbsp;:&nbsp;</p>
+                    <p>Số điện thoại&nbsp;:&nbsp;</p>
+                    <p>Hình thức đặt tiệc&nbsp;:&nbsp;</p>
+                    <p>Email&nbsp;:&nbsp;</p>
+                    <p>Nội dung&nbsp;:&nbsp;</p>
+                    
+                </div>
+                <div class="right_2">
+                    <p id="hovaten"></p>
+                    <p id="sodienthoai"></p>
+                    <p id="hinhthucdattiec"></p>
+                    <p id="email"></p>
+                    <p id="noidung"></p>
+                </div>
+
+            </div>
+            <div style="width:100%;text-align: center;">
+
+            <a href="project.html" ><button style="margin: auto;background-color:#B89F80;color: white;cursor: pointer; ">Trang chủ</button></a>
+            </div>
+        </div>
+    </main>
+    <script>
+      
+      function show() {
+    var str = decodeURIComponent(window.location.href);
+    document.getElementById("hovaten").innerHTML = str.slice(str.indexOf("hovaten") + 71, str.indexOf("sodienthoai") - 78).replace("+"," ");
+    document.getElementById("sodienthoai").innerHTML = str.slice(str.indexOf("sodienthoai") + 93, str.indexOf("hinhthucdattiec") - 57).replace("+"," ");
+    document.getElementById("hinhthucdattiec").innerHTML = str.slice(str.indexOf("hinhthucdattiec") + 113, str.indexOf("email") - 1).replace("+"," ");
+    document.getElementById("email").innerHTML = str.slice(str.indexOf("email") + 6, str.indexOf("noidung") - 1).replace("+"," ");
+    document.getElementById("noidung").innerHTML = str.slice(str.indexOf("noiddung") + 161);
+    
+
+}
+
+  
+
+    
+      
+    </script>
+</body>
+
+</html>
