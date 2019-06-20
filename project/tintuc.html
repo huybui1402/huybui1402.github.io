@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Libre+Baskerville|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+
+    .container{
+    width: 100%;
+    
+}
+.collapse{
+  float: right; 
+  
+}
+.thumbnail{
+    border: none;
+    background-color: transparent;
+}
+.section,.container{
+    width: 100%;
+    padding: 0;
+    margin-top: 0
+    
+}
+.carousel{
+    margin-top: -20px;
+}
+.navbar-default{
+       
+    position: relative;
+   z-index: 1;
+}
+.demo{
+    width: 100%;
+    height: 300px;
+ 
+    padding-top: 20px;
+}
+.demo h3{
+    text-align: center;
+}
+.demo p {
+    text-align: center;
+}
+.dropdown-menu{
+    background-image: url('background-menu.jpg')
+}
+.row{
+    background-image: url()
+}
+.thumbnail img{
+padding-top: 15px;
+}
+.row{
+    margin: auto;
+}
+
+.one1{
+    text-align: center;
+}
+.section{
+    width:100%;
+    height:auto;
+
+    padding-top: 30px;
+}
+.footer{
+    width: 100%;height: 400px;
+    border: 1px solid gray;
+}
+.navbar-brand{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Abril Fatface', cursive;
+}
+.footer .adress{
+    overflow: hidden;
+   float: left;
+   width: 30%;
+   padding-left: 100px;
+   
+}
+.item #mid{
+outline: none;
+}
+img {
+  transition: all 0.5s ease
+ 
+}
+
+.thumbnail img:hover {
+ transform: translate(0,-5px);
+ box-shadow:0px 5px 5px 0px rgba(0, 0, 0,0.2)
+
+}
+
+.content{
+ 
+ padding: 2em 4em;
+ margin-bottom: 1em;
+}
+.sidebar{
+
+ font-size: 95%;
+
+}
+@media screen and (min-width:600px){
+ .main::before, main::after{
+     content: "";
+     display: table;
+     clear: both
+ }
+ .main{
+     max-width:93%;
+ }
+ .content{
+     width: 70%;
+     float: left;
+    
+ }
+ .sidebar{
+     width: 28%;
+     float: left;
+ }
+}
+@media screen and(min-width:1024px){
+ .container{
+     max-width: 1280px;
+     margin: auto;
+ }
+}
+a{
+    text-decoration: none;
+}
+img{
+    opacity: 1
+}
+img:hover{
+    opacity: 0.8
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+body{
+  margin: 0;
+  padding: 0;
+
+}
+
+.navbar{
+  position: fixed;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  width: 100%;
+}
+.logo{
+ 
+  background-size: contain;
+  width: 180px;
+  height: 18px;
+  float: left;
+  margin-left:20px;
+
+  text-decoration: none;
+}
+
+.menu{
+  position: absolute;
+  right: 20px;
+}
+.menu a{
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 20px;
+  transition: color 0.3s;
+  text-transform: uppercase;
+ 
+}
+.menu a:hover{
+  color: #6ab04c;
+}
+.header{
+  width: 100%;
+  height: 600px;
+ 
+  background-size: cover;
+  margin-top: 80px;
+}
+.btn{
+  display: none;
+  position: absolute;
+  right: 20px;
+}
+.btn:hover > span{
+  background: #6ab04c;
+}
+.btn span{
+  display: block;
+  margin: 6px;
+  width: 40px;
+  height: 3px;
+  background: #333;
+}
+
+@media only screen and (max-width : 1010px) {
+  .navbar{
+    overflow: visible;
+  }
+  .menu{
+    width: 100%;
+    right: 0;
+    top: 78px;
+    background: #f1f1f1;
+    overflow: hidden;
+    max-height: 0;
+  }
+  .menu a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+  .btn{
+    display: block;
+    cursor: pointer;
+  }
+  .show{
+    max-height: 500px;
+  }
+}
+
+</style>
+<!-- <img src="" alt=""> -->
+
+<body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header class="container">
+
+            <div class="navbar" style="z-index:1000;">
+                    <div class="logo">
+                        <p><a style=" text-transform: uppercase;font-size: 22px;color:#B89F80;    font-family: 'ZCOOL QingKe HuangYou', cursive;
+                            font-family: 'Libre Baskerville', serif;
+                            font-family: 'Abril Fatface', cursive;"
+                                href="project.html">HappyFamily</a></p>
+                    </div>
+                    <a class="btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <div class="menu">
+                        <a href="project.html" style="color:#B89F80; background-color: transparent;">Trang chủ</a>
+                        <a href="damcuoi.html" style="color:#B89F80;">Đám cưới</a>
+                        <a href="birthday.html" style="color:#B89F80;">Sinh nhật</a>
+                        <a href="canhacthoitrang.html" style="color:#B89F80;">Thời trang/Ca nhạc</a>
+                        <a href="uudai.html" style="color:#B89F80;">Ưu đãi</a>
+                        <a href="thucdon.html" style="color:#B89F80;">Thực đơn</a>
+                        <a href="tintuc.html" style="color:#B89F80;">Tin tức</a>
+                        <a href="dattiec.html" style="color:#B89F80;">Đặt tiệc</a>
+        
+                    </div>
+
+    </header>
+
+    <section>
+        <div class="big" style="width:100%;height:400px;margin-top:80px;background-image: url('christos-aggelidis-photographer.jpg')">
+            <div class="one4" style="text-align: center;width:100%;height:40px;color: white;padding-top: 80px;">
+                <h2 style="font-size: 40px;color: white;">Tin Tức</h2>
+            </div>
+            <div style="width:100%;margin:auto; padding-top:20px;color: white;padding-top: 90px;">
+                <p style="font-size:18px;text-align: center;">Chúng tôi luôn cập nhật tin tức mới nhất,hot nhất</p>
+                <p style="font-size:18px;text-align: center;">Liên quan đến dịch vụ của chúng tôi.</p>
+                <p style="font-size:18px;text-align: center;">Những thời trang đổi mới</p>
+                <p style="font-size:18px;text-align: center;">Những dịch vụ tốt nhất , tiện lợi nhất cho các bạn.</p>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="container" style="margin-top:70px;">
+        <div class="main">
+            <div class="content">
+                <img src="./thiepcuoi4.png" alt="thiepcuoi" class="img-responsive">
+                <div>
+                    <h3 style="margin-left:40px;color:#B89F80; ;margin-top: 30px;">Các loại mẫu thiệp cưới được ưa
+                        chuộng nhất</h3>
+                    <p style="margin-left:40px;width:80%;color: #626262;;margin-top: 30px;"> Thiệp cưới họa tiết floral
+                        chưa bao giờ thôi “hot” trong mùa cưới Xuân - Hè. Năm
+                        2019 cũng không ngoại lệ khi phong cách cưới mộc mạc, gần gũi với thiên nhiên ngày
+                        càng lên ngôi.</p>
+                    <p style="margin-left:40px;">Ngày 22/2/2019</p>
+
+                    <a href="./thiepcuoi.html"><button style="margin-left: 40px;background-color:#B89F80;color:white;">Xem
+                            thêm</button></a>
+                    <div style="width:80%;margin-left: 40px;margin-top: 100px;">
+                        <img src="./nghi-le-cuoi-truyen-thong-viet-nam-cac-buoc.jpg" alt="thiepcuoi" class="img-responsive">
+                        <h3 style="color:#B89F80;">Cô dâu cần chuẩn bị những gì cho ngày cưới thật suôn sẻ?</h3>
+                        <p style="color:#626262">Chú rể và cô dâu cần chuẩn bị những gì cho ngày cưới luôn là vấn đề
+                            khiến các cặp đôi
+                            sắp kết hôn trăn trở. Marry sẽ giúp bạn liệt kê danh sách công việc cần chuẩn bị trước,
+                            trong ngày cưới, cũng như vật dụng mang về nhà chồng.</p>
+                        <p>Ngày 22/2/2019</p>
+                        <a href="biquyetchocodau.html" style="color:white"> <button style="width:100px; height:30px;background-color:#B89F80;;">Xem
+                                thêm</button></a>
+                    </div>
+                    <div style="margin-top: 50px;">
+                        <div style="width:80%;margin-left: 40px;margin-top: 100px;">
+                            <img src="./nghi-le-cuoi-truyen-thong-viet-nam-cac-buoc.jpg" alt="thiepcuoi" class="img-responsive">
+                            <h3 style="color:#B89F80;">Cô dâu cần chuẩn bị những gì cho ngày cưới thật suôn sẻ?</h3>
+                            <p style="color:#626262">Chú rể và cô dâu cần chuẩn bị những gì cho ngày cưới luôn là vấn
+                                đề
+                                khiến các cặp đôi
+                                sắp kết hôn trăn trở. Marry sẽ giúp bạn liệt kê danh sách công việc cần chuẩn bị trước,
+                                trong ngày cưới, cũng như vật dụng mang về nhà chồng.</p>
+                            <p>Ngày 22/2/2019</p>
+                            <a href="biquyetchocodau.html" style="color:white"> <button style="width:100px; height:30px;background-color:#B89F80;;">Xem
+                                    thêm</button></a>
+                        </div>
+                        <div style="width:80%;margin-left: 40px;margin-top: 100px;">
+                            <img src="./nghi-le-cuoi-truyen-thong-viet-nam-cac-buoc.jpg" alt="thiepcuoi" class="img-responsive">
+                            <h3 style="color:#B89F80;">Cô dâu cần chuẩn bị những gì cho ngày cưới thật suôn sẻ?</h3>
+                            <p style="color:#626262">Chú rể và cô dâu cần chuẩn bị những gì cho ngày cưới luôn là vấn
+                                đề
+                                khiến các cặp đôi
+                                sắp kết hôn trăn trở. Marry sẽ giúp bạn liệt kê danh sách công việc cần chuẩn bị trước,
+                                trong ngày cưới, cũng như vật dụng mang về nhà chồng.</p>
+                            <p>Ngày 22/2/2019</p>
+                            <a href="biquyetchocodau.html" style="color:white"> <button style="width:100px; height:30px;background-color:#B89F80;;">Xem
+                                    thêm</button></a>
+                        </div>
+                        <div style="width:80%;margin-left: 40px;margin-top: 100px;">
+                            <img src="./nghi-le-cuoi-truyen-thong-viet-nam-cac-buoc.jpg" alt="thiepcuoi" class="img-responsive">
+                            <h3 style="color:#B89F80;">Cô dâu cần chuẩn bị những gì cho ngày cưới thật suôn sẻ?</h3>
+                            <p style="color:#626262">Chú rể và cô dâu cần chuẩn bị những gì cho ngày cưới luôn là vấn
+                                đề
+                                khiến các cặp đôi
+                                sắp kết hôn trăn trở. Marry sẽ giúp bạn liệt kê danh sách công việc cần chuẩn bị trước,
+                                trong ngày cưới, cũng như vật dụng mang về nhà chồng.</p>
+                            <p>Ngày 22/2/2019</p>
+                            <a href="biquyetchocodau.html" style="color:white"> <button style="width:100px; height:30px;background-color:#B89F80;;">Xem
+                                    thêm</button></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h2 style="color:#B89F80">Bài viết mới nhất</h2>
+            <p style="color:#626262">Chúng tôi cung cấp cho bạn các thông tin, xu hướng mới nhất về lĩnh vực sự
+                kiện/tiệc cưới.</p>
+            <div style="margin-top:70px;">
+                <h3> Bữa tiệc sinh nhật trong mơ</h3>
+                <img src="./sinhnhat8.jpg" alt="sinhnhat" class="img-responsive">
+            </div>
+            <div style="margin-top:10px;width:100%;height:cover;border:1px solid #B89F80;;"></div>
+            <div style="margin-top:70px;">
+                <h3> Bữa tiệc sinh nhật trong mơ</h3>
+                <img src="./sinhnhat8.jpg" alt="sinhnhat" class="img-responsive">
+            </div>
+            <div style="margin-top:10px;width:100%;height:cover;border:1px solid #B89F80;;"></div>
+        </div>
+
+
+        </div>
+    </section>
+
+    <div style="width:100%;height:40px;text-align: center;padding: 5 5 5 5;margin-top: 50px">
+            <button class="four" style="background-color:#B89F80"><a href="#" style="color:white">Đầu</a></button>
+            <button class="four" style="background-color:#B89F80"><a href="#" style="color:white">1</a></button>
+            <button class="four" style="background-color:#B89F80"><a href="#" style="color:white">2</a></button>
+            <button class="four" style="background-color:#B89F80"><a href="" style="color:white">3</a></button>
+            <button class="four" style="background-color:#B89F80"><a href="" style="color:white">Cuối</a></button>
+        </div>
+        <footer style="background-color:#080808e8">
+                <section class="container" style="padding-left:70px;">
+        
+                    <div class="posts">
+                        <div class="section">
+                            <div class="col-md-4">
+                                <div class="item">
+        
+                                    <h3 style="color:white">Trung Tâm HappyFamily</h3></br>
+                                    <b style="font-size:18px;color:white">Địa chỉ:</b> <span style="color:white">Xóm 9 - Xã Xuân TiếnTiến-Huyện Xuân Trường</span>
+                                   
+                                    <p style="color:white">Tỉnh Nam Định</p>
+        
+                                    </br>
+                                </div>
+        
+        
+                            </div>
+                            <div class="col-md-4">
+                                <div class="item">
+                                    <div class="thumbnail">
+                                        <h3 style="color:white">Liên hệ</h3>
+                                       <b style="font-size:18px;color:white">Hotline:</b> <span style="color:white">0387664262</span>
+                                       </br>
+                                       <b style="font-size:18px;color:white">Email:</b> <span style="color:white">Huybui14022000@gmail.com</span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="item">
+                                    <div class="thumbnail">
+                                        <h3 style="color:white">Kết nối với chúng tôi</h3>
+                                        <a href="https://www.facebook.com/profile.php?id=100006194080235"><i class="fab fa-facebook-square"
+                                                style="font-size:50px"></i></a>
+                                        <a href="https://www.youtube.com/channel/UCrBxg9GdkPsV3yopKfzJ_AQ?view_as=subscriber"
+                                            style="color:red;"> <i class="fab fa-youtube-square" style="font-size:50px"></i></a>
+                                        <a href="https://www.instagram.com/canhuy47/" style="color:purple;"><i class="fab fa-instagram"
+                                                style="font-size:50px"></i></a>
+        
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </section>
+        
+            </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $('#myform').on('submit', function () {
+            var isValid = true
+            if ($('#name').val().trim() == '') {
+                $('#name').next('span').text('Name is empty');
+                isValid = false;
+            }
+            else {
+                $('#name').next('span').text('');
+            }
+            if ($('#email').val().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/) == null) {
+                $('#email').next('span').text('Email is invalid');
+                isValid = false
+            } else {
+                $('#email').next('span').text('');
+            }
+
+            if ($('#Telephone').val().trim() == '') {
+                $('#Telephone').next('span').text('Telephone is empty');
+                isValid = false;
+            }
+            else {
+                $('#Telephone').next('span').text('');
+            }
+
+            if ($('#year').val().trim() == '') {
+                $('#year').next('span').text('not hinh thuc dat tic');
+                isValid = false;
+            }
+            else {
+                $('#year').next('span').text('');
+            }
+
+            return isValid;
+
+        })
+    </script>
+     <script type="text/javascript">
+
+        $(".btn").on("click", function () {
+            $('.menu').toggleClass("show");
+        });
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

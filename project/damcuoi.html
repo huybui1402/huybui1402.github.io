@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Libre+Baskerville|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+    width: 100%;
+    
+}
+
+.thumbnail{
+    border: none;
+    background-color: transparent;
+}
+.section,.container{
+    width: 100%;
+    padding: 0;
+    margin-top: 0
+    
+}
+.carousel{
+    margin-top: -20px;
+}
+.navbar-default{
+       
+    position: relative;
+   z-index: 1;
+}
+.demo{
+    width: 100%;
+    height: 300px;
+ 
+    padding-top: 20px;
+}
+.demo h3{
+    text-align: center;
+}
+.demo p {
+    text-align: center;
+}
+.dropdown-menu{
+    background-image: url('background-menu.jpg')
+}
+.collapse{
+  float: right; 
+  
+}
+.thumbnail img{
+padding-top: 15px;
+}
+.row{
+    margin: auto;
+}
+
+.one1{
+    text-align: center;
+}
+.section{
+    width:100%;
+    height:auto;
+
+    padding-top: 30px;
+}
+.footer{
+    width: 100%;height: 400px;
+    border: 1px solid gray;
+}
+.navbar-brand{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Abril Fatface', cursive;
+}
+.footer .adress{
+    overflow: hidden;
+   float: left;
+   width: 30%;
+   padding-left: 100px;
+   
+}
+.item #mid{
+outline: none;
+}
+img {
+  transition: all 0.5s ease
+ 
+}
+
+.thumbnail img:hover {
+ transform: translate(0,-5px);
+ box-shadow:0px 5px 5px 0px rgba(0, 0, 0,0.2)
+
+}
+#one-1{
+         /* The image used */
+         background-image: url("./weddingbeautiful.jpg");
+width:100%;
+/* Set a specific height */
+height: 800px;; 
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+opacity:0.9;
+}
+.one-2{
+         /* The image used */
+         background-image: url("./weddingbeautiful2.jpg");
+width:100%;
+/* Set a specific height */
+height: 600px;; 
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+opacity:0.8;
+}
+.one-3{
+  /* The image used */
+  background-image: url("./weddingbeautiful8.jpg");
+
+  /* Set a specific height */
+  min-height: 650px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+height: 50px;;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+
+}
+.tabcontent img{
+    opacity: 0.8;
+}
+.tabcontent img:hover{
+    opacity: 1;
+}
+
+#background{
+  /* The image used */
+  background-image: url("./damcuoi006.jpg");
+
+  /* Set a specific height */
+  min-height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+opacity: 0.9;
+}
+ul li:hover {
+    background-color: #212020a1;
+    color: white;
+}
+
+.main{
+    
+}
+.content{
+ 
+    padding: 2em 2em;
+    margin-bottom: 2em;
+}
+.sidebar{
+  
+    font-size: 95%;
+ 
+}
+@media screen and (min-width:600px){
+    .main::before, main::after{
+        content: "";
+        display: table;
+        clear: both
+    }
+    .main{
+        max-width:100%;
+    }
+    .content{
+        width: 70%;
+        float: left;
+        margin-right: 1.5%;
+    }
+    .sidebar{
+        width: 28%;
+        float: left;
+    }
+}
+@media screen and(min-width:1024px){
+    .container{
+        max-width: 1280px;
+        margin: auto;
+    }
+}
+ul li:hover {
+    background-color: #212020a1;
+    color: white;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: gray;;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+body{
+  margin: 0;
+  padding: 0;
+
+}
+
+.navbar{
+  position: fixed;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  width: 100%;
+}
+.logo{
+ 
+  background-size: contain;
+  width: 180px;
+  height: 18px;
+  float: left;
+  margin-left:20px;
+
+  text-decoration: none;
+}
+
+.menu{
+  position: absolute;
+  right: 20px;
+}
+.menu a{
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 20px;
+  transition: color 0.3s;
+  text-transform: uppercase;
+ 
+}
+.menu a:hover{
+  color: #6ab04c;
+}
+.header{
+  width: 100%;
+  height: 600px;
+ 
+  background-size: cover;
+  margin-top: 80px;
+}
+.btn{
+  display: none;
+  position: absolute;
+  right: 20px;
+}
+.btn:hover > span{
+  background: #6ab04c;
+}
+.btn span{
+  display: block;
+  margin: 6px;
+  width: 40px;
+  height: 3px;
+  background: #333;
+}
+
+@media only screen and (max-width : 1010px) {
+  .navbar{
+    overflow: visible;
+  }
+  .menu{
+    width: 100%;
+    right: 0;
+    top: 78px;
+    background: #f1f1f1;
+    overflow: hidden;
+    max-height: 0;
+  }
+  .menu a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+  .btn{
+    display: block;
+    cursor: pointer;
+  }
+  .show{
+    max-height: 500px;
+  }
+}
+
+
+
+
+.image {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        
+        
+
+    }
+
+    .box {
+        width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 15px;
+        margin: 0 auto;
+    }
+
+    .card {
+        position: relative;
+        width: 300px;
+        height: 350px;
+        background: #fff;
+        margin: 0 auto;
+        border-radius: 4px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, .2)
+    }
+
+    .card::before,
+    .card::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 1;
+
+    }
+
+    .card:hover::before {
+        transform: rotate(20deg);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, .2)
+    }
+
+    .card:hover:after {
+        transform: rotate(10deg);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, .2)
+    }
+
+    .card .imgBx {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
+        
+        transition: 0.5s;
+        z-index: 100;
+    }
+
+    .card:hover .imgBx {
+        bottom: 80px;
+    }
+
+    .card .imgBx img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card .details {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        height: 60px;
+        text-align: center;
+        z-index: 10
+    }
+
+    .card .details h2 {
+        margin: 0;
+        padding: 0;
+        font-weight: 600;
+        font-size: 20px;
+        color: #777;
+        text-transform: uppercase;
+    }
+
+    .card .details h2 span {
+        font-weight: 500px;
+        font-size: 16px;
+        color: #f38695;
+        display: block;
+    }
+</style>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header class="container">
+        <div class="navbar" style="z-index:1000;">
+            <div class="logo">
+                <p><a style=" text-transform: uppercase;font-size: 22px;color:#B89F80;    font-family: 'ZCOOL QingKe HuangYou', cursive;
+                            font-family: 'Libre Baskerville', serif;
+                            font-family: 'Abril Fatface', cursive;"
+                        href="project.html">HappyFamily</a></p>
+            </div>
+            <a class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="menu">
+                <a href="project.html" style="color:#B89F80; background-color: transparent;">Trang chủ</a>
+                <a href="damcuoi.html" style="color:#B89F80;">Đám cưới</a>
+                <a href="birthday.html" style="color:#B89F80;">Sinh nhật</a>
+                <a href="canhacthoitrang.html" style="color:#B89F80;">Thời trang/Ca nhạc</a>
+                <a href="uudai.html" style="color:#B89F80;">Ưu đãi</a>
+                <a href="thucdon.html" style="color:#B89F80;">Thực đơn</a>
+                <a href="tintuc.html" style="color:#B89F80;">Tin tức</a>
+                <a href="dattiec.html" style="color:#B89F80;">Đặt tiệc</a>
+
+            </div>
+
+    </header>
+
+    <h2 style="text-align:center;color: #B89F80;margin-top: 150px;">DỊCH VỤ ĐÁM CƯỚI</h2>
+
+    <section class="container" style="margin-top:100px;">
+        <div class="main">
+            <div class="content">
+                <img src="./adu1.jpg" alt="weddingbeautiful" class="img-responsive">
+                <di5>
+                    <h3 style="margin-left:33px;color:#B89F80; ;margin-top: 30px;">TRUNG TÂM TỔ CHỨC SỰ KIỆN HÀ NỘI -
+                        SANG TRỌNG THANH
+                        LỊCH</h3>
+                    <p style="margin-left:40px;width:80%;color: #626262;;margin-top: 30px;"> Tòa nhà Hancorp Plaza, 72
+                        Trần Đăng Ninh, Cầu Giấy, Hà Nội</p>
+                    <p style="margin-left:40px;width:80%;color: #626262;;margin-top: 30px;"> Số 40 Hàng Cót, Quận Hoàn
+                        Kiếm, Hà Nội</p>
+                    <p style="margin-left:40px;width:80%;color: #626262;;margin-top: 30px;"> 173B Trường Chinh, Quận
+                        Đống Đa, Hà Nội</p>
+                    <p style="margin-left:40px;width:80%;color: #626262;;margin-top: 30px;"> 65 Quán Sứ, Quận Hoàn
+                        Kiếm, Hà Nội</p>
+                    <p style="margin-left:40px;width:80%;color: #626262;;margin-top: 30px;"> 22 Thành Công, Quận Ba
+                        Đình, Hà Nội</p>
+
+                    <div class="container">
+
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#home">Giới thiệu chung</a></li>
+                            <li><a data-toggle="tab" href="#menu1">Phòng tiệc</a></li>
+                            <li><a data-toggle="tab" href="#menu2">Trang trí tiệc</a></li>
+                            <li><a data-toggle="tab" href="#menu3">Dịch vụ</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane fade in active">
+                                <section class="container" style="background-color:#f5f5f5">
+                                    <!-- <img src="./damcuoimg.jpg" alt=""> -->
+                                    <div class="posts">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="item">
+                                                    <div class="thumbnail">
+                                                        <img src="./adu1.jpg" alt="wedding" class="img-responsive"
+                                                            style="margin-top:30px;">
+
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="item">
+                                                    <div class="thumbnail">
+
+                                                        <div class="document" style="margin-top:40px;">
+                                                            <p style="color:#626262;font-size:18px;">Ngày cưới của bạn
+                                                                sẽ trở nên ý
+                                                                nghĩa và hoàn hảo hơn dưới sự biến tấu điệu nghệ của
+                                                                các chuyên gia tiệc cưới giàu kinh nghiệm tại
+                                                                HappyFamily
+                                                                . Chỉ cần chọn một phòng cưới thật sang trọng và
+                                                                cùng người thân, bạn bè trải qua những khoảnh khắc đẹp
+                                                                nhất trong cuộc đời, tất cả còn lại đã có HappyFamily
+                                                                chu toàn. Từ khâu chuẩn bị cho đến quá trình diễn ra lễ
+                                                                cưới, mọi thứ sẽ được đi theo một quy trình chuyên
+                                                                nghiệp và đẳng cấp.
+
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </section>
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                                <section class="container" style="background-color:#f5f5f5">
+                                    <!-- <img src="./damcuoimg.jpg" alt=""> -->
+                                    <div class="posts">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="item">
+                                                    <div class="thumbnail">
+                                                        <img src="./phongtiec.jpg" alt="wedding" class="img-responsive"
+                                                            style="margin-top:30px;">
+
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="item">
+                                                    <div class="thumbnail">
+
+                                                        <div class="document" style="margin-top:40px;">
+                                                            <p style="color:#626262;font-size:18px;">03 Sảnh cưới với
+                                                                diện tích sảnh chờ hơn 600m2 , diện tích phòng tiệc
+                                                                1100m2 được đầu tư công nghệ mái hiện đại không cột, hệ
+                                                                thống vách ngăn thông minh có sức chứa 1200 khách trong
+                                                                cùng 1 không gian :
+
+
+
+                                                            </p>
+                                                            <p  style="color:#626262;font-size:18px;"> • Máy chiếu di động, màn hình LED P4 với độ phân giải
+                                                                lớn</p>
+                                                            <p  style="color:#626262;font-size:18px;"> • Hệ thống ánh sáng được thiết kế tinh vi, tích hợp
+                                                                công nghệ hiện đại nhất với dàn đèn Par Led, Moving
+                                                                Head, các loại đèn tạo hiệu ứng, máy tạo khói...vv</p>
+                                                            <p  style="color:#626262;font-size:18px;"> • Hệ thống âm thanh được thiết kế kết hợp hài hòa với
+                                                                ánh sáng tạo nên hiệu ứng kép về nghe nhìn trong không
+                                                                gian mỗi sảnh.</p>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </section>
+                            </div>
+                            <div id="menu2" class="tab-pane fade">
+                                <section class="container" style="background-color:#f5f5f5">
+                                    <!-- <img src="./damcuoimg.jpg" alt=""> -->
+                                    <div class="posts">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="item">
+                                                    <div class="thumbnail">
+                                                        <img src="./trangtritiec.jpg" alt="wedding" class="img-responsive"
+                                                            style="margin-top:30px;">
+
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="item">
+                                                    <div class="thumbnail">
+
+                                                        <div class="document" style="margin-top:40px;">
+                                                            <p style="color:#626262;font-size:18px;">Bốn tầng với bốn
+                                                                không gian được bày trí với các tông màu chủ đạo khác
+                                                                nhau giúp đôi uyên ương có những lựa chọn phù hợp nhất
+                                                                với mong muốn trong ngày trọng đại của mình. Sảnh tổ
+                                                                chức tiệc cưới được trang trí toàn bộ bằng hoa lụa tạo
+                                                                cảm giác nhẹ nhàng, lãng mạn; Khu chụp hình backdrop
+                                                                hoành tráng cùng cô dâu chú rể lưu lại những khoảnh
+                                                                khắc đáng nhớ bên người thân bạn bè. HappyFamily không
+                                                                chỉ mang tới cho các cặp uyên ương một không gian cưới
+                                                                ấn tượng, đẳng cấp mà còn lưu giữ những viên gạch hồng
+                                                                đầu tiên trên hành trình mang tên Hạnh phúc.
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </section>
+                            </div>
+                            <div id="menu3" class="tab-pane fade">
+                                <section class="container" style="background-color:#f5f5f5">
+                                    <!-- <img src="./damcuoimg.jpg" alt=""> -->
+                                    <div class="posts">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="item">
+                                                    <div class="thumbnail">
+                                                        <img src="./copy.jpg" alt="wedding" class="img-responsive"
+                                                            style="margin-top:30px;">
+
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="item">
+                                                    <div class="thumbnail">
+
+                                                        <div class="document" style="margin-top:40px;">
+                                                            <p style="color:#626262;font-size:18px;">Trung tâm tổ chức Sự kiện và Tiệc cưới CTM Palace chuyên cung cấp các gói dịch vụ thông mình, tiết kiệm và tiện lợi cùng những ưu đãi hấp dẫn trong mùa cưới cùng cung cách phục vụ chuẩn mực hứa hẹn sẽ là lựa chọn lý tưởng cho các gia đình trong ngày trọng đại này. 
+
+                                                            </p>
+                                                            <p  style="color:#626262;font-size:18px;">- MC dẫn chương trình</p>
+                                                            <p  style="color:#626262;font-size:18px;"> - Đôi bé thiên thần, đôi múa chúc phúc</p>
+                                                            <p  style="color:#626262;font-size:18px;"> - Tam tấu đón khách</p>
+                                                            <p  style="color:#626262;font-size:18px;">- Chương trình nghệ thuật</p>
+                                                            <p  style="color:#626262;font-size:18px;">   - Khánh tiết...</p>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        </div>
+        <div class="sidebar">
+            <h2 style="color:#B89F80">Bài viết mới nhất</h2>
+            <p style="color:#626262">Chúng tôi cung cấp cho bạn các thông tin, xu hướng mới nhất về lĩnh vực sự
+                kiện/tiệc cưới.</p>
+            <div style="margin-top:70px;">
+                <h3> Bữa tiệc sinh nhật trong mơ</h3>
+                <img src="./sinhnhat8.jpg" alt="sinhnhat" class="img-responsive">
+            </div>
+            <div style="margin-top:10px;width:100%;height:cover;border:1px solid #B89F80;;"></div>
+            <div style="margin-top:70px;">
+                <h3> Bữa tiệc sinh nhật trong mơ</h3>
+                <img src="./sinhnhat8.jpg" alt="sinhnhat" class="img-responsive">
+            </div>
+            <div style="margin-top:10px;width:100%;height:cover;border:1px solid #B89F80;;"></div>
+        </div>
+
+
+        </div>
+    </section>
+    <div>
+        <h2 style="color:#B89F80;text-align:center;position: relative;padding-top: 50px;">Cho thuê các loại dụng cụ
+        </h2>
+        <section class="image">
+
+            <div class="box">
+
+                <div class="card">
+
+                    <div class="imgBx">
+                        <a href="chothuenhabat.html"><img src="./nhabat1.jpg" alt="image1"></a>
+
+                    </div>
+                    <div class="details">
+                        <h2>Cho Thuê Nhà Bạt<br><span><a href="chothuenhabat.html" style=" color: #f38695;text-decoration: none;">Xem
+                                    thêm</a></span></h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <a href="chothuebanghecuoi.html"> <img src="./adu3.jpg" alt="image2"></a>
+
+                    </div>
+                    <div class="details">
+                        <h2>Cho Thuê Bàn Ghế<br><span><a href="chothuebanghecuoi.html" style=" color: #f38695;text-decoration: none;">Xem
+                                    thêm</a></span></h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <a href="chothuephongcuoi.html"> <img src="./phongcuoi1.jpg" alt="image3"></a>
+                    </div>
+                    <div class="details">
+                        <h2>Cho Thuê Phông Cưới<br><span><a href="chothuephongcuoi.html" style=" color: #f38695;text-decoration: none;">Xem
+                                    thêm</a></span></h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <a href="">
+                            <img src="./conghoa1.jpg" alt="image3"></a>
+                    </div>
+                    <div class="details">
+                        <h2>Cho Thuê Cổng Hoa<br><span><a href="chothueconghoa.html" style=" color: #f38695;text-decoration: none;">Xem
+                                    thêm</a></span></h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <a href="chothueconghoa.html">
+                            <img src="./hoatuoi.jpg" alt="image3"></a>
+                    </div>
+                    <div class="details">
+                        <h2>Cho Thuê Hoa Tươi<br><span><a href="chothueconghoa.html" style=" color: #f38695;text-decoration: none;">Xem
+                                    thêm</a></span></h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <a href="muckhac.html">
+                            <img src="./dencuoi.jpg" alt="image3">
+                        </a>
+                    </div>
+                    <div class="details">
+                        <h2>Mục Khác<br><span><a href="muckhac.html" style=" color: #f38695;text-decoration: none;">Xem
+                                    thêm</a></span></h2>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="container"  id="background" style="margin-top:60px;">
+
+            <div class="posts">
+                <div class="section">
+                    <form action="luudangky.html" id="myform">
+                        <div class="col-md-6">
+                            <div class="item" style="padding-left:60px;padding-top: 40px;">
+                                <h3 style="color:white;">Đăng ký đặt tiệc</h3>
+    
+                                <input type="text" name="name" id="name" placeholder="Họ và tên" style="width: 75%; padding-left: 10px;height: 40px;border-radius: 5px;">
+                                <span class="error" style="color:red;"></span> </br>
+                                </br>
+                                <input type="text" name="Telephone" id="Telephone" placeholder="Số điện thoại" style="width: 75%;padding-left: 10px;;height: 40px;border-radius: 5px;" />
+                                <span class="error" style="color:red;"></span> </br>
+                                </br>
+                                <input type="email" name="email" id="email" placeholder="Gmail" style="width: 75%;padding-left: 10px;;height: 40px;border-radius: 5px;" />
+                                <span class="error" style="color:red;"></span> </br>
+                                </br>
+    
+    
+                            </div>
+    
+    
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+    
+    
+                                <div class="thumbnail" style="padding-left:60px;padding-top: 45px;">
+    
+                                    <div class="document-2" style="padding-top: 50px;">
+                                        <select name="Hinhthuc" id="year" style="height:27px;width:70%;background-color:white;height: 40px;;;">
+                                            <option value="">Hình thức đặt tiệc</option>
+                                            <option value="Đám cưới">Đám cưới</option>
+                                            <option value="Sinh nhật">Sinh nhật</option>
+                                            <option value="Thời trang">Thời trang</option>
+                                            </br>
+                                        </select> <span class="error"></span> </br>
+    
+                                        </br>
+                                        <input type="text" name="noidung" id="noidung" placeholder="Nội dung muốn nói"
+                                            style="width: 70%;height:100px; padding-left: 10px;top:-100px;border-radius: 5px;" class="img-responsive">
+                                        <span class="error" style="color:red;"></span> </br>
+                                        </br>
+                                        <input type="submit" value="Đăng kí" id="mid" style="background-color:#c57a1e;color:white;" />
+                                    </div>
+                                    
+                                </div>
+    
+    
+                            </div>
+                        </div>
+                    </form>
+                </div>
+    
+            </div>
+        </section>
+
+
+        <footer style="background-color:#080808e8">
+            <section class="container" style="padding-left:70px;">
+
+                <div class="posts">
+                    <div class="section">
+                        <div class="col-md-4">
+                            <div class="item">
+
+                                <h3 style="color:white">Trung Tâm HappyFamily</h3></br>
+                                <b style="font-size:18px;color:white">Địa chỉ:</b> <span style="color:white">Xóm 9 - Xã
+                                    Xuân TiếnTiến-Huyện Xuân Trường</span>
+
+                                <p style="color:white">Tỉnh Nam Định</p>
+
+                                </br>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <h3 style="color:white">Liên hệ</h3>
+                                    <b style="font-size:18px;color:white">Hotline:</b> <span style="color:white">0387664262</span>
+                                    </br>
+                                    <b style="font-size:18px;color:white">Email:</b> <span style="color:white">Huybui14022000@gmail.com</span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <h3 style="color:white">Kết nối với chúng tôi</h3>
+                                    <a href="https://www.facebook.com/profile.php?id=100006194080235"><i class="fab fa-facebook-square"
+                                            style="font-size:50px"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCrBxg9GdkPsV3yopKfzJ_AQ?view_as=subscriber"
+                                        style="color:red;"> <i class="fab fa-youtube-square" style="font-size:50px"></i></a>
+                                    <a href="https://www.instagram.com/canhuy47/" style="color:purple;"><i class="fab fa-instagram"
+                                            style="font-size:50px"></i></a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+            $('#myform').on('submit', function () {
+                var isValid = true
+                if ($('#name').val().trim() == '') {
+                    $('#name').next('span').text('Name is empty');
+                    isValid = false;
+                }
+                else {
+                    $('#name').next('span').text('');
+                }
+                if ($('#email').val().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/) == null) {
+                    $('#email').next('span').text('Email is invalid');
+                    isValid = false
+                } else {
+                    $('#email').next('span').text('');
+                }
+
+                if ($('#Telephone').val().trim() == '') {
+                    $('#Telephone').next('span').text('Telephone is empty');
+                    isValid = false;
+                }
+                else {
+                    $('#Telephone').next('span').text('');
+                }
+
+                return isValid;
+
+            })
+
+
+        </script>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+
+            }
+        </script>
+        <script type="text/javascript">
+
+            $(".btn").on("click", function () {
+                $('.menu').toggleClass("show");
+            });
+
+
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
